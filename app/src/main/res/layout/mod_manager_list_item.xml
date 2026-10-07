@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="8dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:minHeight="64dp">
+
+    <!-- Conflict indicator dot -->
+    <View
+        android:id="@+id/mod_item_conflict_dot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#ef5350"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mod_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="?attr/colorPrimaryText"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/mod_item_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="?attr/colorSecondaryText"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- Enable / Disable toggle -->
+    <ImageView
+        android:id="@+id/mod_item_toggle"
+        style="@style/ListMenuButton"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/toggle_button_off"
+        android:contentDescription="Enable or disable mod" />
+
+    <!-- Remove button -->
+    <ImageView
+        android:id="@+id/mod_item_remove"
+        style="@style/ListMenuButton"
+        android:src="@drawable/icon_remove"
+        android:contentDescription="Remove mod" />
+</LinearLayout>

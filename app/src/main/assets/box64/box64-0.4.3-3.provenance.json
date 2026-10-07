@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "c74d4daaadc033d57a66697239558554994e21c4b9fe395cc2082c0d6d2f2893",
+  "box64_sha256": "e31e26e9cbef38c68a5eb14ebfad6753443f3ac8b41d6f502ca0b46ff25cb3cf",
+  "package_version": "0.4.3-3",
+  "patch_sha256": "41c4d8514a3c8f50d82584d4ef2e7413efcb48a196f087641f363b343445c22b",
+  "toolchain_sha256": "bd5f4808995af2ec647bd0fe8f62815e2c65abcf0558f38f183188d05328d0a0",
+  "toolchain_url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/14.2.rel1/binrel/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-aarch64-none-linux-gnu.zip",
+  "upstream_revision": "e2345d735af36f7915ab861a55b489d69f2350c7",
+  "upstream_tag": "v0.4.3-3",
+  "upstream_url": "https://github.com/ptitSeb/box64.git"
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.winlator">
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.winlator.secure.permission.SEND_GAME_EVENTS"/>
+
+    <permission
+        android:name="com.winlator.secure.permission.SEND_GAME_EVENTS"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="com.winlator.WinlatorApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:appCategory="game"
+        android:isGame="true"
+        android:extractNativeLibs="true"
+        android:allowAudioPlaybackCapture="true"
+        android:label="@string/app_name">
+
+        <activity android:name="com.winlator.MainActivity"
+            android:theme="@style/AppThemeDark"
+            android:exported="true"
+            android:screenOrientation="sensor"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|density|navigation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.winlator.XServerDisplayActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeFullscreenDark"
+            android:supportsPictureInPicture="true"
+            android:launchMode="singleTask"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|density|navigation"
+            android:screenOrientation="sensorLandscape" />
+
+        <activity android:name="com.winlator.ControlsEditorActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeFullscreenDark"
+            android:screenOrientation="sensorLandscape" />
+
+        <activity
+            android:name="com.winlator.TextCapabilitiesTestActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeDark"
+            android:screenOrientation="sensorLandscape" />
+
+        <activity android:name="com.winlator.ExternalControllerBindingsActivity"
+            android:theme="@style/AppThemeDark"
+            android:exported="false"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name="com.winlator.api.GameManagerActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|density|uiMode"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="com.winlator.secure.action.GET_CAPABILITIES"/>
+                <action android:name="com.winlator.secure.action.LIST_GAMES"/>
+                <action android:name="com.winlator.secure.action.GET_GAME"/>
+                <action android:name="com.winlator.secure.action.CREATE_GAME"/>
+                <action android:name="com.winlator.secure.action.CONFIGURE_GAME"/>
+                <action android:name="com.winlator.secure.action.RUN_INSTALLER"/>
+                <action android:name="com.winlator.secure.action.LAUNCH_GAME"/>
+                <action android:name="com.winlator.secure.action.DELETE_GAME"/>
+                <action android:name="com.winlator.secure.action.MOVE_GAME_TO_ISOLATED"/>
+                <action android:name="com.winlator.secure.action.CREATE_SNAPSHOT"/>
+                <action android:name="com.winlator.secure.action.CLEAR_TRANSLATION_CACHE"/>
+                <action android:name="com.winlator.secure.action.CONFIGURE_GLOBAL_SETTINGS"/>
+                <action android:name="com.winlator.secure.action.OPEN_RECOVERY"/>
+                <action android:name="com.winlator.secure.action.OPEN_MOD_MANAGER"/>
+                <action android:name="com.winlator.secure.action.OPEN_DEPENDENCY_MANAGER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.winlator.api.ApiApprovalActivity"
+            android:theme="@style/ApiApprovalTheme"
+            android:exported="false" />
+
+        <activity
+            android:name="com.winlator.api.RecoveryActivity"
+            android:theme="@style/AppThemeDark"
+            android:exported="false" />
+
+        <activity
+            android:name="com.winlator.api.ModManagerActivity"
+            android:theme="@style/AppThemeDark"
+            android:exported="false" />
+
+        <activity
+            android:name="com.winlator.api.dependency.RuntimeDependencyActivity"
+            android:theme="@style/AppThemeDark"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|density" />
+
+        <provider
+            android:name="com.winlator.api.GameQueryProvider"
+            android:authorities="com.winlator.secure.agm"
+            android:exported="true"
+            android:grantUriPermissions="false" />
+
+        <service
+            android:name="com.winlator.api.DeferredGameLaunchService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+</manifest>

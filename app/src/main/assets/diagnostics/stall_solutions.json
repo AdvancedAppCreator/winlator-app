@@ -1,0 +1,224 @@
+{
+  "version": 3,
+  "updatedAt": "2026-07-21",
+  "notes": "Flowable stall-remedy knowledge base. Each flow is an ordered list of steps the troubleshooter walks across restarts. Curated from community troubleshooting (DeepWiki winebox64/winlator, XDA, Winlator101). Extend by adding flows/steps; ship updates by placing an updated copy at filesDir/diagnostics/stall_solutions.json.",
+  "flows": [
+    {
+      "id": "vulkan-surface-alloc-failed",
+      "priority": 95,
+      "match": {
+        "causes": ["presenting_stall", "stuck_before_first_frame", "graphics_init_stall"],
+        "anyLog": ["failed to allocate client window", "x11drv_vulkan_surface_create"]
+      },
+      "steps": [
+        {
+          "id": "vksurface-wined3d",
+          "title": "Use WineD3D (OpenGL)",
+          "rationale": "The game could not create a Vulkan rendering surface. WineD3D renders Direct3D through OpenGL and avoids the failing Vulkan-surface path.",
+          "set": {"dxwrapper": "wined3d", "dxwrapperConfig": ""},
+          "skipIfConfig": {"dxwrapper": "wined3d"}
+        },
+        {
+          "id": "vksurface-turnip",
+          "title": "Switch to the Turnip driver",
+          "rationale": "For a natively-Vulkan game, a different Vulkan driver often succeeds where the current one fails to allocate the surface window.",
+          "set": {"graphicsDriver": "turnip", "graphicsDriverConfig": ""},
+          "skipIfConfig": {"graphicsDriver": "turnip"}
+        },
+        {
+          "id": "vksurface-vortek",
+          "title": "Switch to the Vortek driver",
+          "rationale": "A conservative Vulkan driver fallback for surface-allocation failures.",
+          "set": {"graphicsDriver": "vortek,gladio", "graphicsDriverConfig": ""},
+          "skipIfConfig": {"graphicsDriver": "vortek"}
+        }
+      ]
+    },
+    {
+      "id": "audio-block-stall",
+      "priority": 85,
+      "match": {
+        "causes": ["stuck_before_first_frame"],
+        "anyLog": ["libasound", "winealsa", "alsa"]
+      },
+      "steps": [
+        {
+          "id": "audio-switch-pulse",
+          "title": "Switch to the PulseAudio driver",
+          "rationale": "The game went silent right after ALSA audio initialized, which often means it is blocked opening the ALSA device. PulseAudio uses a non-blocking backend.",
+          "set": {"audioDriver": "pulseaudio", "audioDriverConfig": ""},
+          "skipIfConfig": {"audioDriver": "pulseaudio"}
+        },
+        {
+          "id": "audio-switch-alsa",
+          "title": "Switch to the ALSA driver",
+          "rationale": "If PulseAudio stalls, fall back to ALSA.",
+          "set": {"audioDriver": "alsa", "audioDriverConfig": ""},
+          "skipIfConfig": {"audioDriver": "alsa"}
+        },
+        {
+          "id": "audio-disable",
+          "title": "Disable audio",
+          "rationale": "The game hangs while initializing audio. Disabling audio makes Wine load no audio backend at all, which avoids the stall (at the cost of in-game sound).",
+          "set": {"audioDriver": "disabled", "audioDriverConfig": ""},
+          "skipIfConfig": {"audioDriver": "disabled"}
+        }
+      ]
+    },
+    {
+      "id": "unity-stall",
+      "priority": 90,
+      "match": {
+        "causes": ["presenting_stall", "stuck_before_first_frame"],
+        "anyLog": ["unity", "il2cpp", "unityplayer", "mono-2.0"]
+      },
+      "steps": [
+        {
+          "id": "unity-box64-stability",
+          "title": "Use the Box64 Stability preset",
+          "rationale": "Unity games are prone to dynarec crashes; the Stability preset trades speed for reliable startup.",
+          "set": {"box64Preset": "STABILITY"},
+          "skipIfConfig": {"box64Preset": "STABILITY"}
+        },
+        {
+          "id": "unity-mmap32",
+          "title": "Enable 32-bit memory mapping",
+          "rationale": "BOX64_MMAP32=1 fixes black screens on some Unity titles, especially on Adreno GPUs.",
+          "env": {"BOX64_MMAP32": "1"},
+          "skipIfConfig": {"envVars": "BOX64_MMAP32=1"}
+        },
+        {
+          "id": "unity-wined3d",
+          "title": "Use WineD3D (OpenGL)",
+          "rationale": "Some Unity builds present a black screen under DXVK; WineD3D renders through OpenGL instead.",
+          "set": {"dxwrapper": "wined3d", "dxwrapperConfig": ""},
+          "skipIfConfig": {"dxwrapper": "wined3d"}
+        }
+      ]
+    },
+    {
+      "id": "old-game",
+      "priority": 70,
+      "match": {
+        "causes": ["presenting_stall", "stuck_before_first_frame"],
+        "anyLog": ["ddraw", "d3d8", "direct3d 8", "dplay", "directdraw"]
+      },
+      "steps": [
+        {
+          "id": "mesa-extension-year",
+          "title": "Enable legacy graphics compatibility",
+          "rationale": "Older games expect pre-2003 OpenGL extensions; MESA_EXTENSION_MAX_YEAR restores that behavior.",
+          "env": {"MESA_EXTENSION_MAX_YEAR": "2003"},
+          "skipIfConfig": {"envVars": "MESA_EXTENSION_MAX_YEAR=2003"}
+        },
+        {
+          "id": "oldgame-wined3d",
+          "title": "Use WineD3D (OpenGL)",
+          "rationale": "Legacy Direct3D titles are more compatible with WineD3D than with Vulkan translation.",
+          "set": {"dxwrapper": "wined3d", "dxwrapperConfig": ""},
+          "skipIfConfig": {"dxwrapper": "wined3d"}
+        }
+      ]
+    },
+    {
+      "id": "graphics-driver-adreno",
+      "priority": 60,
+      "match": {
+        "causes": ["presenting_stall", "graphics_init_stall", "stuck_before_first_frame"],
+        "gpuContains": ["adreno", "turnip", "freedreno"]
+      },
+      "steps": [
+        {
+          "id": "use-turnip",
+          "title": "Switch to the Turnip driver",
+          "rationale": "Turnip is the recommended Vulkan driver for Adreno GPUs and fixes many black screens.",
+          "set": {"graphicsDriver": "turnip", "graphicsDriverConfig": ""},
+          "skipIfConfig": {"graphicsDriver": "turnip"}
+        },
+        {
+          "id": "use-vortek",
+          "title": "Switch to the Vortek driver",
+          "rationale": "Vortek is a conservative fallback when Turnip stalls on your device.",
+          "set": {"graphicsDriver": "vortek,gladio", "graphicsDriverConfig": ""},
+          "skipIfConfig": {"graphicsDriver": "vortek"}
+        }
+      ]
+    },
+    {
+      "id": "presenting-stall-default",
+      "priority": 50,
+      "match": {
+        "causes": ["presenting_stall"]
+      },
+      "steps": [
+        {
+          "id": "presenting-try-dxvk",
+          "title": "Switch to DXVK (Vulkan)",
+          "rationale": "The window opened but never presented; DXVK routes Direct3D through Vulkan and often resolves this.",
+          "set": {"dxwrapper": "dxvk", "dxwrapperConfig": ""},
+          "skipIfConfig": {"dxwrapper": "dxvk"}
+        },
+        {
+          "id": "presenting-try-wined3d",
+          "title": "Use WineD3D (OpenGL)",
+          "rationale": "If Vulkan translation stalls after the first frame, WineD3D renders through OpenGL instead.",
+          "set": {"dxwrapper": "wined3d", "dxwrapperConfig": ""},
+          "skipIfConfig": {"dxwrapper": "wined3d"}
+        },
+        {
+          "id": "presenting-lower-res",
+          "title": "Lower the game resolution",
+          "rationale": "Reduces render-target and memory pressure that can stall the first presented frame.",
+          "set": {"screenSize": "1280x720"},
+          "skipIfConfig": {"screenSize": "1280x720"}
+        }
+      ]
+    },
+    {
+      "id": "stuck-before-first-frame-default",
+      "priority": 50,
+      "match": {
+        "causes": ["stuck_before_first_frame"]
+      },
+      "steps": [
+        {
+          "id": "stuck-box64-stability",
+          "title": "Use the Box64 Stability preset",
+          "rationale": "Disables aggressive CPU-translation optimizations that can hang before the first window appears.",
+          "set": {"box64Preset": "STABILITY"},
+          "skipIfConfig": {"box64Preset": "STABILITY"}
+        },
+        {
+          "id": "stuck-graphics-compat",
+          "title": "Use compatibility graphics",
+          "rationale": "Switches to a conservative Vortek + WineD3D configuration for early-startup stalls.",
+          "set": {"graphicsDriver": "vortek,gladio", "graphicsDriverConfig": "", "dxwrapper": "wined3d", "dxwrapperConfig": ""},
+          "skipIfConfig": {"dxwrapper": "wined3d", "graphicsDriver": "vortek"}
+        }
+      ]
+    },
+    {
+      "id": "graphics-init-default",
+      "priority": 50,
+      "match": {
+        "causes": ["graphics_init_stall"]
+      },
+      "steps": [
+        {
+          "id": "graphics-init-vortek",
+          "title": "Switch to the Vortek driver",
+          "rationale": "Graphics initialization stalled; Vortek is a conservative driver that avoids the failing path.",
+          "set": {"graphicsDriver": "vortek,gladio", "graphicsDriverConfig": ""},
+          "skipIfConfig": {"graphicsDriver": "vortek"}
+        },
+        {
+          "id": "graphics-init-wined3d",
+          "title": "Use WineD3D (OpenGL)",
+          "rationale": "Avoids the Vulkan translation layer that appears to be stalling during initialization.",
+          "set": {"dxwrapper": "wined3d", "dxwrapperConfig": ""},
+          "skipIfConfig": {"dxwrapper": "wined3d"}
+        }
+      ]
+    }
+  ]
+}

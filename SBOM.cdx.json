@@ -1,0 +1,2054 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:3da460c4-bef8-5d86-832f-1a67ef30b813",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-07T01:29:20Z",
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:generic/winlator-secure@11.1-secure.81",
+      "name": "Winlator Secure",
+      "version": "11.1-secure.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "winlator:dependencies-lock-sha256",
+        "value": "ebadd988fc04209faf20dd654f8faa60424efb749a79e0fccfb4400dc2331a13"
+      },
+      {
+        "name": "winlator:sources-lock-sha256",
+        "value": "e0d3b3fbd0706f3c81093cf993883ce9768f7e9cc4a23ec3194c6aac46a126cc"
+      },
+      {
+        "name": "winlator:gradle-lock-sha256",
+        "value": "9513310415f24e7b2cdf28dd00ce741628d5b537282417a650559693fa582e00"
+      },
+      {
+        "name": "winlator:upstream-revision",
+        "value": "7e2699213a1e6282263706392ba6b644a2178e3b"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.activity/activity@1.6.0",
+      "name": "androidx.activity:activity",
+      "version": "1.6.0",
+      "purl": "pkg:maven/androidx.activity/activity@1.6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.activity/activity-ktx@1.5.1",
+      "name": "androidx.activity:activity-ktx",
+      "version": "1.5.1",
+      "purl": "pkg:maven/androidx.activity/activity-ktx@1.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.activity/activity-ktx@1.6.0",
+      "name": "androidx.activity:activity-ktx",
+      "version": "1.6.0",
+      "purl": "pkg:maven/androidx.activity/activity-ktx@1.6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.annotation/annotation@1.3.0",
+      "name": "androidx.annotation:annotation",
+      "version": "1.3.0",
+      "purl": "pkg:maven/androidx.annotation/annotation@1.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.annotation/annotation-experimental@1.3.0",
+      "name": "androidx.annotation:annotation-experimental",
+      "version": "1.3.0",
+      "purl": "pkg:maven/androidx.annotation/annotation-experimental@1.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.appcompat/appcompat@1.6.1",
+      "name": "androidx.appcompat:appcompat",
+      "version": "1.6.1",
+      "purl": "pkg:maven/androidx.appcompat/appcompat@1.6.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.appcompat/appcompat-resources@1.6.1",
+      "name": "androidx.appcompat:appcompat-resources",
+      "version": "1.6.1",
+      "purl": "pkg:maven/androidx.appcompat/appcompat-resources@1.6.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.arch.core/core-common@2.1.0",
+      "name": "androidx.arch.core:core-common",
+      "version": "2.1.0",
+      "purl": "pkg:maven/androidx.arch.core/core-common@2.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.arch.core/core-runtime@2.0.0",
+      "name": "androidx.arch.core:core-runtime",
+      "version": "2.0.0",
+      "purl": "pkg:maven/androidx.arch.core/core-runtime@2.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.arch.core/core-runtime@2.1.0",
+      "name": "androidx.arch.core:core-runtime",
+      "version": "2.1.0",
+      "purl": "pkg:maven/androidx.arch.core/core-runtime@2.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.cardview/cardview@1.0.0",
+      "name": "androidx.cardview:cardview",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.cardview/cardview@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.collection/collection@1.1.0",
+      "name": "androidx.collection:collection",
+      "version": "1.1.0",
+      "purl": "pkg:maven/androidx.collection/collection@1.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.collection/collection-ktx@1.1.0",
+      "name": "androidx.collection:collection-ktx",
+      "version": "1.1.0",
+      "purl": "pkg:maven/androidx.collection/collection-ktx@1.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.concurrent/concurrent-futures@1.0.0",
+      "name": "androidx.concurrent:concurrent-futures",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.concurrent/concurrent-futures@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.concurrent/concurrent-futures@1.1.0",
+      "name": "androidx.concurrent:concurrent-futures",
+      "version": "1.1.0",
+      "purl": "pkg:maven/androidx.concurrent/concurrent-futures@1.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.constraintlayout/constraintlayout@2.0.1",
+      "name": "androidx.constraintlayout:constraintlayout",
+      "version": "2.0.1",
+      "purl": "pkg:maven/androidx.constraintlayout/constraintlayout@2.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.constraintlayout/constraintlayout-solver@2.0.1",
+      "name": "androidx.constraintlayout:constraintlayout-solver",
+      "version": "2.0.1",
+      "purl": "pkg:maven/androidx.constraintlayout/constraintlayout-solver@2.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.coordinatorlayout/coordinatorlayout@1.1.0",
+      "name": "androidx.coordinatorlayout:coordinatorlayout",
+      "version": "1.1.0",
+      "purl": "pkg:maven/androidx.coordinatorlayout/coordinatorlayout@1.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.core/core@1.9.0",
+      "name": "androidx.core:core",
+      "version": "1.9.0",
+      "purl": "pkg:maven/androidx.core/core@1.9.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.core/core-ktx@1.2.0",
+      "name": "androidx.core:core-ktx",
+      "version": "1.2.0",
+      "purl": "pkg:maven/androidx.core/core-ktx@1.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.core/core-ktx@1.9.0",
+      "name": "androidx.core:core-ktx",
+      "version": "1.9.0",
+      "purl": "pkg:maven/androidx.core/core-ktx@1.9.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.cursoradapter/cursoradapter@1.0.0",
+      "name": "androidx.cursoradapter:cursoradapter",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.cursoradapter/cursoradapter@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.customview/customview@1.1.0",
+      "name": "androidx.customview:customview",
+      "version": "1.1.0",
+      "purl": "pkg:maven/androidx.customview/customview@1.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.documentfile/documentfile@1.0.0",
+      "name": "androidx.documentfile:documentfile",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.documentfile/documentfile@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.drawerlayout/drawerlayout@1.0.0",
+      "name": "androidx.drawerlayout:drawerlayout",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.drawerlayout/drawerlayout@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.dynamicanimation/dynamicanimation@1.0.0",
+      "name": "androidx.dynamicanimation:dynamicanimation",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.dynamicanimation/dynamicanimation@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.emoji2/emoji2@1.2.0",
+      "name": "androidx.emoji2:emoji2",
+      "version": "1.2.0",
+      "purl": "pkg:maven/androidx.emoji2/emoji2@1.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.emoji2/emoji2-views-helper@1.2.0",
+      "name": "androidx.emoji2:emoji2-views-helper",
+      "version": "1.2.0",
+      "purl": "pkg:maven/androidx.emoji2/emoji2-views-helper@1.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.exifinterface/exifinterface@1.0.0",
+      "name": "androidx.exifinterface:exifinterface",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.exifinterface/exifinterface@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.fragment/fragment@1.3.6",
+      "name": "androidx.fragment:fragment",
+      "version": "1.3.6",
+      "purl": "pkg:maven/androidx.fragment/fragment@1.3.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.fragment/fragment-ktx@1.3.6",
+      "name": "androidx.fragment:fragment-ktx",
+      "version": "1.3.6",
+      "purl": "pkg:maven/androidx.fragment/fragment-ktx@1.3.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.interpolator/interpolator@1.0.0",
+      "name": "androidx.interpolator:interpolator",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.interpolator/interpolator@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.legacy/legacy-support-core-utils@1.0.0",
+      "name": "androidx.legacy:legacy-support-core-utils",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.legacy/legacy-support-core-utils@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-common@2.5.1",
+      "name": "androidx.lifecycle:lifecycle-common",
+      "version": "2.5.1",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-common@2.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-livedata@2.0.0",
+      "name": "androidx.lifecycle:lifecycle-livedata",
+      "version": "2.0.0",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-livedata@2.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-livedata-core@2.5.1",
+      "name": "androidx.lifecycle:lifecycle-livedata-core",
+      "version": "2.5.1",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-livedata-core@2.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-livedata-core-ktx@2.3.1",
+      "name": "androidx.lifecycle:lifecycle-livedata-core-ktx",
+      "version": "2.3.1",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-livedata-core-ktx@2.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-process@2.4.1",
+      "name": "androidx.lifecycle:lifecycle-process",
+      "version": "2.4.1",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-process@2.4.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-runtime@2.5.1",
+      "name": "androidx.lifecycle:lifecycle-runtime",
+      "version": "2.5.1",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-runtime@2.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-runtime-ktx@2.5.1",
+      "name": "androidx.lifecycle:lifecycle-runtime-ktx",
+      "version": "2.5.1",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-runtime-ktx@2.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-viewmodel@2.5.1",
+      "name": "androidx.lifecycle:lifecycle-viewmodel",
+      "version": "2.5.1",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-viewmodel@2.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-viewmodel-ktx@2.5.1",
+      "name": "androidx.lifecycle:lifecycle-viewmodel-ktx",
+      "version": "2.5.1",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-viewmodel-ktx@2.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.lifecycle/lifecycle-viewmodel-savedstate@2.5.1",
+      "name": "androidx.lifecycle:lifecycle-viewmodel-savedstate",
+      "version": "2.5.1",
+      "purl": "pkg:maven/androidx.lifecycle/lifecycle-viewmodel-savedstate@2.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.loader/loader@1.0.0",
+      "name": "androidx.loader:loader",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.loader/loader@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.localbroadcastmanager/localbroadcastmanager@1.0.0",
+      "name": "androidx.localbroadcastmanager:localbroadcastmanager",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.localbroadcastmanager/localbroadcastmanager@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.preference/preference@1.2.1",
+      "name": "androidx.preference:preference",
+      "version": "1.2.1",
+      "purl": "pkg:maven/androidx.preference/preference@1.2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.print/print@1.0.0",
+      "name": "androidx.print:print",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.print/print@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.recyclerview/recyclerview@1.1.0",
+      "name": "androidx.recyclerview:recyclerview",
+      "version": "1.1.0",
+      "purl": "pkg:maven/androidx.recyclerview/recyclerview@1.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.resourceinspection/resourceinspection-annotation@1.0.1",
+      "name": "androidx.resourceinspection:resourceinspection-annotation",
+      "version": "1.0.1",
+      "purl": "pkg:maven/androidx.resourceinspection/resourceinspection-annotation@1.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.savedstate/savedstate@1.2.0",
+      "name": "androidx.savedstate:savedstate",
+      "version": "1.2.0",
+      "purl": "pkg:maven/androidx.savedstate/savedstate@1.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.savedstate/savedstate-ktx@1.2.0",
+      "name": "androidx.savedstate:savedstate-ktx",
+      "version": "1.2.0",
+      "purl": "pkg:maven/androidx.savedstate/savedstate-ktx@1.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.slidingpanelayout/slidingpanelayout@1.2.0",
+      "name": "androidx.slidingpanelayout:slidingpanelayout",
+      "version": "1.2.0",
+      "purl": "pkg:maven/androidx.slidingpanelayout/slidingpanelayout@1.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.startup/startup-runtime@1.1.1",
+      "name": "androidx.startup:startup-runtime",
+      "version": "1.1.1",
+      "purl": "pkg:maven/androidx.startup/startup-runtime@1.1.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.test/annotation@1.0.1",
+      "name": "androidx.test:annotation",
+      "version": "1.0.1",
+      "purl": "pkg:maven/androidx.test/annotation@1.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.test/core@1.5.0",
+      "name": "androidx.test:core",
+      "version": "1.5.0",
+      "purl": "pkg:maven/androidx.test/core@1.5.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.test/monitor@1.6.1",
+      "name": "androidx.test:monitor",
+      "version": "1.6.1",
+      "purl": "pkg:maven/androidx.test/monitor@1.6.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.test.espresso/espresso-idling-resource@3.5.1",
+      "name": "androidx.test.espresso:espresso-idling-resource",
+      "version": "3.5.1",
+      "purl": "pkg:maven/androidx.test.espresso/espresso-idling-resource@3.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.test.services/storage@1.4.2",
+      "name": "androidx.test.services:storage",
+      "version": "1.4.2",
+      "purl": "pkg:maven/androidx.test.services/storage@1.4.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.tracing/tracing@1.0.0",
+      "name": "androidx.tracing:tracing",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.tracing/tracing@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.transition/transition@1.2.0",
+      "name": "androidx.transition:transition",
+      "version": "1.2.0",
+      "purl": "pkg:maven/androidx.transition/transition@1.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.transition/transition@1.4.1",
+      "name": "androidx.transition:transition",
+      "version": "1.4.1",
+      "purl": "pkg:maven/androidx.transition/transition@1.4.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.vectordrawable/vectordrawable@1.1.0",
+      "name": "androidx.vectordrawable:vectordrawable",
+      "version": "1.1.0",
+      "purl": "pkg:maven/androidx.vectordrawable/vectordrawable@1.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.vectordrawable/vectordrawable-animated@1.1.0",
+      "name": "androidx.vectordrawable:vectordrawable-animated",
+      "version": "1.1.0",
+      "purl": "pkg:maven/androidx.vectordrawable/vectordrawable-animated@1.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.versionedparcelable/versionedparcelable@1.1.1",
+      "name": "androidx.versionedparcelable:versionedparcelable",
+      "version": "1.1.1",
+      "purl": "pkg:maven/androidx.versionedparcelable/versionedparcelable@1.1.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.viewpager/viewpager@1.0.0",
+      "name": "androidx.viewpager:viewpager",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.viewpager/viewpager@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.viewpager2/viewpager2@1.0.0",
+      "name": "androidx.viewpager2:viewpager2",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.viewpager2/viewpager2@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.window/window@1.0.0",
+      "name": "androidx.window:window",
+      "version": "1.0.0",
+      "purl": "pkg:maven/androidx.window/window@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.almworks.sqlite4java/sqlite4java@1.0.392",
+      "name": "com.almworks.sqlite4java:sqlite4java",
+      "version": "1.0.392",
+      "purl": "pkg:maven/com.almworks.sqlite4java/sqlite4java@1.0.392"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.github.luben/zstd-jni@1.5.2-3",
+      "name": "com.github.luben:zstd-jni",
+      "version": "1.5.2-3",
+      "purl": "pkg:maven/com.github.luben/zstd-jni@1.5.2-3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.datatransport/transport-api@2.2.1",
+      "name": "com.google.android.datatransport:transport-api",
+      "version": "2.2.1",
+      "purl": "pkg:maven/com.google.android.datatransport/transport-api@2.2.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.datatransport/transport-backend-cct@2.3.3",
+      "name": "com.google.android.datatransport:transport-backend-cct",
+      "version": "2.3.3",
+      "purl": "pkg:maven/com.google.android.datatransport/transport-backend-cct@2.3.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.datatransport/transport-runtime@2.2.6",
+      "name": "com.google.android.datatransport:transport-runtime",
+      "version": "2.2.6",
+      "purl": "pkg:maven/com.google.android.datatransport/transport-runtime@2.2.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-base@18.5.0",
+      "name": "com.google.android.gms:play-services-base",
+      "version": "18.5.0",
+      "purl": "pkg:maven/com.google.android.gms/play-services-base@18.5.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-basement@18.4.0",
+      "name": "com.google.android.gms:play-services-basement",
+      "version": "18.4.0",
+      "purl": "pkg:maven/com.google.android.gms/play-services-basement@18.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition@19.0.1",
+      "name": "com.google.android.gms:play-services-mlkit-text-recognition",
+      "version": "19.0.1",
+      "purl": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition@19.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-chinese@16.0.1",
+      "name": "com.google.android.gms:play-services-mlkit-text-recognition-chinese",
+      "version": "16.0.1",
+      "purl": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-chinese@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-common@19.1.0",
+      "name": "com.google.android.gms:play-services-mlkit-text-recognition-common",
+      "version": "19.1.0",
+      "purl": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-common@19.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-devanagari@16.0.1",
+      "name": "com.google.android.gms:play-services-mlkit-text-recognition-devanagari",
+      "version": "16.0.1",
+      "purl": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-devanagari@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-japanese@16.0.1",
+      "name": "com.google.android.gms:play-services-mlkit-text-recognition-japanese",
+      "version": "16.0.1",
+      "purl": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-japanese@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-korean@16.0.1",
+      "name": "com.google.android.gms:play-services-mlkit-text-recognition-korean",
+      "version": "16.0.1",
+      "purl": "pkg:maven/com.google.android.gms/play-services-mlkit-text-recognition-korean@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-tasks@18.2.0",
+      "name": "com.google.android.gms:play-services-tasks",
+      "version": "18.2.0",
+      "purl": "pkg:maven/com.google.android.gms/play-services-tasks@18.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.material/material@1.4.0",
+      "name": "com.google.android.material:material",
+      "version": "1.4.0",
+      "purl": "pkg:maven/com.google.android.material/material@1.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.odml/image@1.0.0-beta1",
+      "name": "com.google.android.odml:image",
+      "version": "1.0.0-beta1",
+      "purl": "pkg:maven/com.google.android.odml/image@1.0.0-beta1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.auto.value/auto-value-annotations@1.10.1",
+      "name": "com.google.auto.value:auto-value-annotations",
+      "version": "1.10.1",
+      "purl": "pkg:maven/com.google.auto.value/auto-value-annotations@1.10.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.code.findbugs/jsr305@3.0.2",
+      "name": "com.google.code.findbugs:jsr305",
+      "version": "3.0.2",
+      "purl": "pkg:maven/com.google.code.findbugs/jsr305@3.0.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.errorprone/error_prone_annotations@2.18.0",
+      "name": "com.google.errorprone:error_prone_annotations",
+      "version": "2.18.0",
+      "purl": "pkg:maven/com.google.errorprone/error_prone_annotations@2.18.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.firebase/firebase-annotations@16.0.0",
+      "name": "com.google.firebase:firebase-annotations",
+      "version": "16.0.0",
+      "purl": "pkg:maven/com.google.firebase/firebase-annotations@16.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.firebase/firebase-components@16.1.0",
+      "name": "com.google.firebase:firebase-components",
+      "version": "16.1.0",
+      "purl": "pkg:maven/com.google.firebase/firebase-components@16.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.firebase/firebase-encoders@16.1.0",
+      "name": "com.google.firebase:firebase-encoders",
+      "version": "16.1.0",
+      "purl": "pkg:maven/com.google.firebase/firebase-encoders@16.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.firebase/firebase-encoders-json@17.1.0",
+      "name": "com.google.firebase:firebase-encoders-json",
+      "version": "17.1.0",
+      "purl": "pkg:maven/com.google.firebase/firebase-encoders-json@17.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.guava/failureaccess@1.0.1",
+      "name": "com.google.guava:failureaccess",
+      "version": "1.0.1",
+      "purl": "pkg:maven/com.google.guava/failureaccess@1.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.guava/guava@31.1-jre",
+      "name": "com.google.guava:guava",
+      "version": "31.1-jre",
+      "purl": "pkg:maven/com.google.guava/guava@31.1-jre"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.guava/listenablefuture@1.0",
+      "name": "com.google.guava:listenablefuture",
+      "version": "1.0",
+      "purl": "pkg:maven/com.google.guava/listenablefuture@1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava",
+      "name": "com.google.guava:listenablefuture",
+      "version": "9999.0-empty-to-avoid-conflict-with-guava",
+      "purl": "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.j2objc/j2objc-annotations@1.3",
+      "name": "com.google.j2objc:j2objc-annotations",
+      "version": "1.3",
+      "purl": "pkg:maven/com.google.j2objc/j2objc-annotations@1.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/common@18.11.0",
+      "name": "com.google.mlkit:common",
+      "version": "18.11.0",
+      "purl": "pkg:maven/com.google.mlkit/common@18.11.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/language-id@17.0.6",
+      "name": "com.google.mlkit:language-id",
+      "version": "17.0.6",
+      "purl": "pkg:maven/com.google.mlkit/language-id@17.0.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/language-id-common@16.1.0",
+      "name": "com.google.mlkit:language-id-common",
+      "version": "16.1.0",
+      "purl": "pkg:maven/com.google.mlkit/language-id-common@16.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/text-recognition@16.0.1",
+      "name": "com.google.mlkit:text-recognition",
+      "version": "16.0.1",
+      "purl": "pkg:maven/com.google.mlkit/text-recognition@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/text-recognition-bundled-common@17.0.0",
+      "name": "com.google.mlkit:text-recognition-bundled-common",
+      "version": "17.0.0",
+      "purl": "pkg:maven/com.google.mlkit/text-recognition-bundled-common@17.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/text-recognition-chinese@16.0.1",
+      "name": "com.google.mlkit:text-recognition-chinese",
+      "version": "16.0.1",
+      "purl": "pkg:maven/com.google.mlkit/text-recognition-chinese@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/text-recognition-devanagari@16.0.1",
+      "name": "com.google.mlkit:text-recognition-devanagari",
+      "version": "16.0.1",
+      "purl": "pkg:maven/com.google.mlkit/text-recognition-devanagari@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/text-recognition-japanese@16.0.1",
+      "name": "com.google.mlkit:text-recognition-japanese",
+      "version": "16.0.1",
+      "purl": "pkg:maven/com.google.mlkit/text-recognition-japanese@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/text-recognition-korean@16.0.1",
+      "name": "com.google.mlkit:text-recognition-korean",
+      "version": "16.0.1",
+      "purl": "pkg:maven/com.google.mlkit/text-recognition-korean@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/translate@17.0.3",
+      "name": "com.google.mlkit:translate",
+      "version": "17.0.3",
+      "purl": "pkg:maven/com.google.mlkit/translate@17.0.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/vision-common@17.3.0",
+      "name": "com.google.mlkit:vision-common",
+      "version": "17.3.0",
+      "purl": "pkg:maven/com.google.mlkit/vision-common@17.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.mlkit/vision-interfaces@16.3.0",
+      "name": "com.google.mlkit:vision-interfaces",
+      "version": "16.3.0",
+      "purl": "pkg:maven/com.google.mlkit/vision-interfaces@16.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.ibm.icu/icu4j@72.1",
+      "name": "com.ibm.icu:icu4j",
+      "version": "72.1",
+      "purl": "pkg:maven/com.ibm.icu/icu4j@72.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.squareup.okhttp3/okhttp@3.0.0",
+      "name": "com.squareup.okhttp3:okhttp",
+      "version": "3.0.0",
+      "purl": "pkg:maven/com.squareup.okhttp3/okhttp@3.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.squareup.okio/okio@1.6.0",
+      "name": "com.squareup.okio:okio",
+      "version": "1.6.0",
+      "purl": "pkg:maven/com.squareup.okio/okio@1.6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/javax.annotation/javax.annotation-api@1.3.2",
+      "name": "javax.annotation:javax.annotation-api",
+      "version": "1.3.2",
+      "purl": "pkg:maven/javax.annotation/javax.annotation-api@1.3.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/javax.inject/javax.inject@1",
+      "name": "javax.inject:javax.inject",
+      "version": "1",
+      "purl": "pkg:maven/javax.inject/javax.inject@1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/junit/junit@4.13.2",
+      "name": "junit:junit",
+      "version": "4.13.2",
+      "purl": "pkg:maven/junit/junit@4.13.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.commons/commons-compress@1.20",
+      "name": "org.apache.commons:commons-compress",
+      "version": "1.20",
+      "purl": "pkg:maven/org.apache.commons/commons-compress@1.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.bouncycastle/bcprov-jdk18on@1.72",
+      "name": "org.bouncycastle:bcprov-jdk18on",
+      "version": "1.72",
+      "purl": "pkg:maven/org.bouncycastle/bcprov-jdk18on@1.72"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.checkerframework/checker-qual@3.12.0",
+      "name": "org.checkerframework:checker-qual",
+      "version": "3.12.0",
+      "purl": "pkg:maven/org.checkerframework/checker-qual@3.12.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.conscrypt/conscrypt-openjdk-uber@2.5.2",
+      "name": "org.conscrypt:conscrypt-openjdk-uber",
+      "version": "2.5.2",
+      "purl": "pkg:maven/org.conscrypt/conscrypt-openjdk-uber@2.5.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.hamcrest/hamcrest-core@1.3",
+      "name": "org.hamcrest:hamcrest-core",
+      "version": "1.3",
+      "purl": "pkg:maven/org.hamcrest/hamcrest-core@1.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jacoco/org.jacoco.agent@0.8.7",
+      "name": "org.jacoco:org.jacoco.agent",
+      "version": "0.8.7",
+      "purl": "pkg:maven/org.jacoco/org.jacoco.agent@0.8.7"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jacoco/org.jacoco.ant@0.8.7",
+      "name": "org.jacoco:org.jacoco.ant",
+      "version": "0.8.7",
+      "purl": "pkg:maven/org.jacoco/org.jacoco.ant@0.8.7"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jacoco/org.jacoco.core@0.8.7",
+      "name": "org.jacoco:org.jacoco.core",
+      "version": "0.8.7",
+      "purl": "pkg:maven/org.jacoco/org.jacoco.core@0.8.7"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jacoco/org.jacoco.report@0.8.7",
+      "name": "org.jacoco:org.jacoco.report",
+      "version": "0.8.7",
+      "purl": "pkg:maven/org.jacoco/org.jacoco.report@0.8.7"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains/annotations@13.0",
+      "name": "org.jetbrains:annotations",
+      "version": "13.0",
+      "purl": "pkg:maven/org.jetbrains/annotations@13.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.7.10",
+      "name": "org.jetbrains.kotlin:kotlin-stdlib",
+      "version": "1.7.10",
+      "purl": "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.7.10"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.7.10",
+      "name": "org.jetbrains.kotlin:kotlin-stdlib-common",
+      "version": "1.7.10",
+      "purl": "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.7.10"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.6.0",
+      "name": "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+      "version": "1.6.0",
+      "purl": "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.6.0",
+      "name": "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+      "version": "1.6.0",
+      "purl": "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-android@1.6.1",
+      "name": "org.jetbrains.kotlinx:kotlinx-coroutines-android",
+      "version": "1.6.1",
+      "purl": "pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-android@1.6.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-bom@1.6.1",
+      "name": "org.jetbrains.kotlinx:kotlinx-coroutines-bom",
+      "version": "1.6.1",
+      "purl": "pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-bom@1.6.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-core@1.6.1",
+      "name": "org.jetbrains.kotlinx:kotlinx-coroutines-core",
+      "version": "1.6.1",
+      "purl": "pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-core@1.6.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm@1.6.1",
+      "name": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm",
+      "version": "1.6.1",
+      "purl": "pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm@1.6.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.json/json@20231013",
+      "name": "org.json:json",
+      "version": "20231013",
+      "purl": "pkg:maven/org.json/json@20231013"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm@9.1",
+      "name": "org.ow2.asm:asm",
+      "version": "9.1",
+      "purl": "pkg:maven/org.ow2.asm/asm@9.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm@9.5",
+      "name": "org.ow2.asm:asm",
+      "version": "9.5",
+      "purl": "pkg:maven/org.ow2.asm/asm@9.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm-analysis@9.1",
+      "name": "org.ow2.asm:asm-analysis",
+      "version": "9.1",
+      "purl": "pkg:maven/org.ow2.asm/asm-analysis@9.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm-analysis@9.5",
+      "name": "org.ow2.asm:asm-analysis",
+      "version": "9.5",
+      "purl": "pkg:maven/org.ow2.asm/asm-analysis@9.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm-commons@9.1",
+      "name": "org.ow2.asm:asm-commons",
+      "version": "9.1",
+      "purl": "pkg:maven/org.ow2.asm/asm-commons@9.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm-commons@9.5",
+      "name": "org.ow2.asm:asm-commons",
+      "version": "9.5",
+      "purl": "pkg:maven/org.ow2.asm/asm-commons@9.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm-tree@9.1",
+      "name": "org.ow2.asm:asm-tree",
+      "version": "9.1",
+      "purl": "pkg:maven/org.ow2.asm/asm-tree@9.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm-tree@9.5",
+      "name": "org.ow2.asm:asm-tree",
+      "version": "9.5",
+      "purl": "pkg:maven/org.ow2.asm/asm-tree@9.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm-util@9.5",
+      "name": "org.ow2.asm:asm-util",
+      "version": "9.5",
+      "purl": "pkg:maven/org.ow2.asm/asm-util@9.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/annotations@4.10.3",
+      "name": "org.robolectric:annotations",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/annotations@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/junit@4.10.3",
+      "name": "org.robolectric:junit",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/junit@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/nativeruntime@4.10.3",
+      "name": "org.robolectric:nativeruntime",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/nativeruntime@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/nativeruntime-dist-compat@1.0.1",
+      "name": "org.robolectric:nativeruntime-dist-compat",
+      "version": "1.0.1",
+      "purl": "pkg:maven/org.robolectric/nativeruntime-dist-compat@1.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/pluginapi@4.10.3",
+      "name": "org.robolectric:pluginapi",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/pluginapi@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/plugins-maven-dependency-resolver@4.10.3",
+      "name": "org.robolectric:plugins-maven-dependency-resolver",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/plugins-maven-dependency-resolver@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/resources@4.10.3",
+      "name": "org.robolectric:resources",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/resources@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/robolectric@4.10.3",
+      "name": "org.robolectric:robolectric",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/robolectric@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/sandbox@4.10.3",
+      "name": "org.robolectric:sandbox",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/sandbox@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/shadowapi@4.10.3",
+      "name": "org.robolectric:shadowapi",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/shadowapi@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/shadows-framework@4.10.3",
+      "name": "org.robolectric:shadows-framework",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/shadows-framework@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/utils@4.10.3",
+      "name": "org.robolectric:utils",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/utils@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.robolectric/utils-reflector@4.10.3",
+      "name": "org.robolectric:utils-reflector",
+      "version": "4.10.3",
+      "purl": "pkg:maven/org.robolectric/utils-reflector@4.10.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.tukaani/xz@1.7",
+      "name": "org.tukaani:xz",
+      "version": "1.7",
+      "purl": "pkg:maven/org.tukaani/xz@1.7"
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:dependency:winlator-upstream-v11.1.0",
+      "name": "winlator-upstream-v11.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "80bdea17d8497a2ae0ff637e68d82a884ccc5ca4406880950b96fd2483e50970"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://github.com/brunodev85/winlator/releases/download/v11.1.0/Winlator_11.1.apk"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "156943882"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL-2.1-only"
+          }
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:dependency:fluidsynth-v2.4.5-android24",
+      "name": "fluidsynth-v2.4.5-android24",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9b4863c690817eef3442afce25605494c8cd9a925ea5328cf2f87b39ac82fed2"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://github.com/FluidSynth/fluidsynth/releases/download/v2.4.5/fluidsynth-2.4.5-android24.zip"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "39634172"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL-2.1-or-later AND third-party dependency licenses"
+          }
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:dependency:timgm6mb-d6ad4ed7",
+      "name": "timgm6mb-d6ad4ed7",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c5378b62028c920cb11e4803327983fee2f2cdff5dc89c708e39da417e51c854"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://raw.githubusercontent.com/arbruijn/TimGM6mb/d6ad4ed72dce1fd3d67f17b74e08cd7ae7941a96/TimGM6mb.sf2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "5969788"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:dependency:ubuntu-liberation-fonts-2.1.5-3",
+      "name": "ubuntu-liberation-fonts-2.1.5-3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "065c2ab1abc9108b17d401016dc594b79750904390f095845c93bb06e1153acc"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/f/fonts-liberation/fonts-liberation_2.1.5-3_all.deb"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "1603290"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "OFL-1.1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:dependency:ubuntu-vlgothic-20220612-1ubuntu1",
+      "name": "ubuntu-vlgothic-20220612-1ubuntu1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "25c1429bc7db5acc2ef03e47c2ef239ae7be76273b26a023e7c1c3e7efe8aae7"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://old-releases.ubuntu.com/ubuntu/pool/universe/f/fonts-vlgothic/fonts-vlgothic_20220612-1ubuntu1_all.deb"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "2362816"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "VLGothic composite license"
+          }
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:dependency:noto-sans-cjk-jp-2.004",
+      "name": "noto-sans-cjk-jp-2.004",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "68a3fc98800b2a27b371f2fb79991daf3633bd89309d4ffaa6946fd587f375b5"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://raw.githubusercontent.com/notofonts/noto-cjk/Sans2.004/Sans/OTF/Japanese/NotoSansCJKjp-Regular.otf"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "16467736"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "OFL-1.1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:dependency:box64-source-e2345d73",
+      "name": "box64-source-e2345d73",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "306f9e75ccd3f0601248390f137a895d2c79675bee779635e672a778ce4fe8c2"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/ptitSeb/box64/zip/e2345d735af36f7915ab861a55b489d69f2350c7"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "20706945"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:dependency:arm-gnu-toolchain-14.2.rel1",
+      "name": "arm-gnu-toolchain-14.2.rel1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bd5f4808995af2ec647bd0fe8f62815e2c65abcf0558f38f183188d05328d0a0"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/14.2.rel1/binrel/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-aarch64-none-linux-gnu.zip"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "331491225"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-or-later WITH GCC-exception-3.1 AND third-party dependency licenses"
+          }
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:box64-e2345d73.zip",
+      "name": "box64-e2345d73.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "306f9e75ccd3f0601248390f137a895d2c79675bee779635e672a778ce4fe8c2"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/ptitSeb/box64/zip/e2345d735af36f7915ab861a55b489d69f2350c7"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "20706945"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:cnc-ddraw-v6.6.0.0.zip",
+      "name": "cnc-ddraw-v6.6.0.0.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "81d4742b7266de1405e254dbd58d363d7b8aaa2ccb085e241a55c661680919b3"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/FunkyFr3sh/cnc-ddraw/zip/refs/tags/v6.6.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "617525"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:d7vk-v1.11.zip",
+      "name": "d7vk-v1.11.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a58a2a1baddffdef559b38a547f965f4e5a97fd615c5d39e010ef9a3b962710e"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/WinterSnowfall/d7vk/zip/refs/tags/v1.11"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "1763101"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:d8vk-v1.0.zip",
+      "name": "d8vk-v1.0.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "13b33431ffe0da858e8d7f069b38ffe95c12de96eba8b88ec5db68a020283cf3"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/AlpyneDreams/d8vk/zip/refs/tags/d8vk-v1.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "1258769"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:dxvk-v1.10.3.zip",
+      "name": "dxvk-v1.10.3.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c85460a340bb52587f033058e20c1172872764fc1073c076d3af6666656f5978"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/doitsujin/dxvk/zip/refs/tags/v1.10.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "1446726"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:dxvk-v2.4.1.zip",
+      "name": "dxvk-v2.4.1.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "47031813f3364e8e20391440baea440a719eb6dcddb97c62bc47d6d2981afc48"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/doitsujin/dxvk/zip/refs/tags/v2.4.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "1317138"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:flac-1.4.3.zip",
+      "name": "flac-1.4.3.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d40333a10f1691105c4ce863675e303412ccae8f23c3969952528310510262f8"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/xiph/flac/zip/refs/tags/1.4.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "1239304"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:fluid-android-build-recipe-v2.4.5.yml",
+      "name": "fluid-android-build-recipe-v2.4.5.yml",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b3cf89910e6e6e01e53de6380d96ddb67b044ffffdf9cda86ab982c3f117ed3d"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://raw.githubusercontent.com/FluidSynth/fluidsynth/v2.4.5/.azure/azure-pipelines-android.yml"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "20467"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:fluidsynth-v2.4.5.zip",
+      "name": "fluidsynth-v2.4.5.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "58a29617319afdfbf72b30b8a4afa99724524358cb097ed33e6d1dcdd4989306"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/FluidSynth/fluidsynth/zip/refs/tags/v2.4.5"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "1977713"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:gettext-v0.22.5.zip",
+      "name": "gettext-v0.22.5.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "954587757e5b10e4ac90044054440df071e04085d3051d3fabbd0e03f8f6afe2"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/autotools-mirror/gettext/zip/v0.22.5"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "8392487"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:gladio-116c0d14.zip",
+      "name": "gladio-116c0d14.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c7c4ae486122a781a146028e4368ab29d4ffcade5d4284466b18cc38acd1709f"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/brunodev85/gladio/zip/116c0d14dedbea3bd057f98f1db138bb1efe225e"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "232094"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:glib-2.72.4.tar.xz",
+      "name": "glib-2.72.4.tar.xz",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8848aba518ba2f4217d144307a1d6cb9afcc92b54e5c13ac1f8c4d4608e96f0e"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://download.gnome.org/sources/glib/2.72/glib-2.72.4.tar.xz"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "4884256"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:libffi-ce077e55.zip",
+      "name": "libffi-ce077e55.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1168f19b247d934bb21e362c081143af560fdba929e770e9f0ae97ed82148eb5"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/libffi/libffi/zip/ce077e5565366171aa1b4438749b0922fce887a4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "949654"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:libiconv-1.17.zip",
+      "name": "libiconv-1.17.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "333caf94d2c4e009bd1b5b957b492ff36461445bbc4373cd879b1688f575c07a"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/gnu-mirror-unofficial/libiconv/zip/c31a14606c2f5c0eebd4cf23d99be6b4fcf6ccb0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "4901616"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:libinstpatch-1.1.6.zip",
+      "name": "libinstpatch-1.1.6.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7ea6c81f35f83136e19423b1022c2c55a368023dea8cb8c791800a5b7d3591f3"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/swami/libinstpatch/zip/refs/tags/v1.1.6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "732627"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:libogg-1.3.5.tar.gz",
+      "name": "libogg-1.3.5.tar.gz",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://github.com/xiph/ogg/releases/download/v1.3.5/libogg-1.3.5.tar.gz"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "593071"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:libsndfile-1.2.2.tar.xz",
+      "name": "libsndfile-1.2.2.tar.xz",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "730760"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:libvorbis-1.3.7.tar.gz",
+      "name": "libvorbis-1.3.7.tar.gz",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0e982409a9c3fc82ee06e08205b1355e5c6aa4c36bca58146ef399621b0ce5ab"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://github.com/xiph/vorbis/releases/download/v1.3.7/libvorbis-1.3.7.tar.gz"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "1658963"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:mesa3d-custom-fa711f80.zip",
+      "name": "mesa3d-custom-fa711f80.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "23b486a4cc23aa1b2f5079aeadcdcf5fa9e85d38e7faaab1e75d30f6441844c7"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/brunodev85/mesa3d-custom/zip/fa711f80c79a7fc04e5cc5438542b5c3692ddcba"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "273552939"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:oboe-1.9.0.zip",
+      "name": "oboe-1.9.0.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fc0612356183a429d4f6f02b00b6870764dc3b45aac268989ac46067d2b243aa"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/google/oboe/zip/refs/tags/1.9.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "6921591"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:opus-1.5.2.zip",
+      "name": "opus-1.5.2.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c26f6200778c844cf5211f0d2dbaafadce3f20e9e8efe7495e01aaa9987c5b13"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/xiph/opus/zip/refs/tags/v1.5.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "4808580"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:pcre-8.45.tar.bz2",
+      "name": "pcre-8.45.tar.bz2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4dae6fdcd2bb0bb6c37b5f97c33c2be954da743985369cddac3546e3218bffb8"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "1578809"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:pulseaudio-200618b3.zip",
+      "name": "pulseaudio-200618b3.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fe891b8421868340fed6779bbe7f78f1cd48b347bfbf242088867f8c65d95e3d"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/pulseaudio/pulseaudio/zip/200618b32f0964a479d69c9b6e5073e6931c370a"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "3225846"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:pulseaudio-android-77c8a721.zip",
+      "name": "pulseaudio-android-77c8a721.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "955ddd9e21e980d8e2ab0b577e02dfeb80581187de4dd11d933bc34ca086433a"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/brunodev85/pulseaudio-android/zip/77c8a7217c5746d44787e78f9b141e7503c981f4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "3947276"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:timgm6mb-d6ad4ed7.zip",
+      "name": "timgm6mb-d6ad4ed7.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b5cbacb1101bd071a94ff036943bb8feb549fa68a2ee9abd55ea0d0b7a02818e"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/arbruijn/TimGM6mb/zip/d6ad4ed72dce1fd3d67f17b74e08cd7ae7941a96"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "5565269"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:vkd3d-proton-v2.14.1.zip",
+      "name": "vkd3d-proton-v2.14.1.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f8ee9eb9f3e5b436e8a2f08ad3c100fcb65b6c77087542e0401a132f3d9ca8e4"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/HansKristian-Work/vkd3d-proton/zip/refs/tags/v2.14.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "2992178"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:vortek-b1730c5d.zip",
+      "name": "vortek-b1730c5d.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4447c835a41630a8872407351f07f9ebd90372520eee10612aa31c7f8602119e"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://codeload.github.com/brunodev85/vortek/zip/b1730c5def9b575672e671aee11d79ae7adc63d1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "184923"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:winlator:source:fonttools-4.62.1.tar.gz",
+      "name": "fonttools-4.62.1.tar.gz",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e54c75fd6041f1122476776880f7c3c3295ffa31962dc6ebe2543c00dca58b5d"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://files.pythonhosted.org/packages/9a/08/7012b00a9a5874311b639c3920270c36ee0c445b69d9989a85e5c92ebcb0/fonttools-4.62.1.tar.gz"
+        }
+      ],
+      "properties": [
+        {
+          "name": "winlator:size",
+          "value": "3580737"
+        }
+      ]
+    }
+  ]
+}

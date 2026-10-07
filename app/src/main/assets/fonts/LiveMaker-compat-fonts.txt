@@ -1,0 +1,7 @@
+The MS Gothic-compatible font files in this directory are modified builds of
+VL Gothic / VL PGothic. Their internal family names are changed solely so
+legacy Windows applications that enumerate those standard Japanese families
+can select an installed Shift-JIS-capable font under Wine.
+
+They do not contain Microsoft font data. Redistribution and modification are
+covered by VLGothic-LICENSE.txt.

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GameTextTestRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202124">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/SGameTextTestMode"
+                style="@style/ComboBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/SGameTextTestScript"
+                style="@style/ComboBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/BTRunGameTextTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/run_ocr" />
+
+            <Button
+                android:id="@+id/BTPreviewGameTextTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preview_overlay" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/SGameTextTestSourceLanguage"
+                style="@style/ComboBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/SGameTextTestTargetLanguage"
+                style="@style/ComboBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/BTPrepareGameTextTestTranslation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/game_text_prepare_translation_short" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ETGameTextTestSource"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="The door is locked." />
+
+            <EditText
+                android:id="@+id/ETGameTextTestReplacement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="The passage is sealed." />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/GameTextTestCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="#F1E8D0"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/TVGameTextTestCardText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="The door is locked."
+                android:textColor="#171717"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/TVGameTextTestStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/game_text_test_ready"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <com.winlator.text.GameTextOverlayView
+        android:id="@+id/GameTextTestOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,19 @@
+{
+  "liberationFonts": {
+    "version": "2.1.5-3",
+    "source": "https://archive.ubuntu.com/ubuntu/pool/main/f/fonts-liberation/fonts-liberation_2.1.5-3_all.deb",
+    "packageSha256": "065C2AB1ABC9108B17D401016DC594B79750904390F095845C93BB06E1153ACC",
+    "license": "SIL-OFL-1.1"
+  },
+  "notoSansCjkJp": {
+    "version": "2.004",
+    "source": "https://github.com/notofonts/noto-cjk",
+    "license": "SIL-OFL-1.1"
+  },
+  "vlGothic": {
+    "version": "2.121",
+    "source": "https://github.com/daisukesuzuki/VLGothic",
+    "revision": "dbaac2843ae55e333df69330b8d13a0c7fb507bd",
+    "license": "VLGothic composite license"
+  }
+}

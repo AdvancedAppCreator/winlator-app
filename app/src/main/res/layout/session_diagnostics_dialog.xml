@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/LLContent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="220dp">
+
+            <TextView
+                android:id="@+id/TVSessionDiagnostics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textSize="12sp"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="2dp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/BTExportSessionDiagnostics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="6dp"
+            android:text="@string/export" />
+    </LinearLayout>
+</LinearLayout>

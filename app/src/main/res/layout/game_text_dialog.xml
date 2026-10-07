@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="520dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_text_display_mode" />
+
+        <Spinner
+            android:id="@+id/SGameTextMode"
+            style="@style/ComboBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/game_text_source_language" />
+
+        <Spinner
+            android:id="@+id/SGameTextSourceLanguage"
+            style="@style/ComboBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/game_text_target_language" />
+
+        <Spinner
+            android:id="@+id/SGameTextTargetLanguage"
+            style="@style/ComboBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/TVGameTextTranslationStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/game_text_translation_offline_note"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/BTPrepareGameTextTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_text_prepare_translation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/capture_interval" />
+
+        <Spinner
+            android:id="@+id/SGameTextInterval"
+            style="@style/ComboBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/replacement_rules" />
+
+        <EditText
+            android:id="@+id/ETGameTextReplacements"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top|start"
+            android:hint="@string/replacement_rules_hint"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BTSelectGameTextRegion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/select_capture_area" />
+
+            <Button
+                android:id="@+id/BTResetGameTextRegion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/reset_capture_area" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BTPreviewGameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/preview_overlay" />
+
+            <Button
+                android:id="@+id/BTOpenGameTextTest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/open_ocr_test_lab" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

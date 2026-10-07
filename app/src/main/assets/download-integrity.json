@@ -1,0 +1,332 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/brunodev85/winlator",
+  "revision": "b6b2259158cf38d06067c34430d840d56b46d220",
+  "algorithm": "SHA-256",
+  "files": {
+    "input_controls/Alien Versus Predator.icp": {
+      "size": 2424,
+      "sha256": "0d74f1437e011ebd66f617ccba1c0aea9db7e9afbc8661151b1e8575e8db113b"
+    },
+    "input_controls/Alpha Protocol.icp": {
+      "size": 2749,
+      "sha256": "03c84eba8d5c3f8053f6d692629a8d8014b4ec5ef0f5c1f422fea7c501a4acfe"
+    },
+    "input_controls/Bioshock.icp": {
+      "size": 2399,
+      "sha256": "1083719286f34d5c76e8aa3415c3f921dbdfdf04e82f740c198dd74c2af49111"
+    },
+    "input_controls/Call of Juarez Gunslinger.icp": {
+      "size": 2784,
+      "sha256": "c8136e88c90db57273d3f633841b52cfd73c76b098db72a71a062de428163e07"
+    },
+    "input_controls/Cyber Shadow.icp": {
+      "size": 1793,
+      "sha256": "de72011e8cf77bbfda31d623f30f1ebd11379ce182ca7e61696b31f2a61b61dd"
+    },
+    "input_controls/Dark Souls 2.icp": {
+      "size": 2917,
+      "sha256": "aa1b218f3721f925f72d0755caba7cd591e94e9a64e4fa1b26f2924231a90879"
+    },
+    "input_controls/Deus Ex Human Revolution.icp": {
+      "size": 2590,
+      "sha256": "24cb0fad461f0c033c2030ab83ab1b7b0b4818104815ef5236d947dc4146c103"
+    },
+    "input_controls/Divinity 2 DC.icp": {
+      "size": 2584,
+      "sha256": "ac1170091b1f33398983964bf2c4050ed39f3133ad56fe5720cf19e37a622e67"
+    },
+    "input_controls/Drakensang.icp": {
+      "size": 2472,
+      "sha256": "3fcbb5123eb6141bde19f445615a4057b47d19ebd119c3ad5c74d0c4f99ba00c"
+    },
+    "input_controls/Driver Parallel Lines.icp": {
+      "size": 2423,
+      "sha256": "0a6e974133b0c618a47ee8fdcaa70e3101f02624bd121f1ea177e2d6f32671cb"
+    },
+    "input_controls/Fallout 3.icp": {
+      "size": 2386,
+      "sha256": "841603f2bcd944a014674e9da2b9881da593aa2059b2edb65fb3941e05330be7"
+    },
+    "input_controls/Far Cry 4.icp": {
+      "size": 3290,
+      "sha256": "3a45ed14fc2b1d188ccf24e333ca2cfc31ed159cc1077186d0b6002c94f046d3"
+    },
+    "input_controls/Final Fantasy 8.icp": {
+      "size": 2014,
+      "sha256": "977675cedc936b063a86f39cfe750a2feac3f053e113a75d41e613b753cf5f8d"
+    },
+    "input_controls/Final Fantasy Type-0.icp": {
+      "size": 2576,
+      "sha256": "d4e6032a4b3bef95cf124753bacb72eac3848f7a99fb350a2c5ae8d7cfd800fe"
+    },
+    "input_controls/FlatOut 2.icp": {
+      "size": 1331,
+      "sha256": "946a5ceda76bf0ebbbe182baac08d0579032b778b9249b038bbf16f901049038"
+    },
+    "input_controls/Front Mission Evolved.icp": {
+      "size": 2404,
+      "sha256": "58be2ab38493d272d0fe85938731c87b41c88970ace354d9cb46ffc487bf3f08"
+    },
+    "input_controls/Gravity Circuit.icp": {
+      "size": 1798,
+      "sha256": "c5007e44e570f1ea00a8dd8db41cae68aef5cdc2efe1354d86ffbf43af965474"
+    },
+    "input_controls/GTA 5.icp": {
+      "size": 3478,
+      "sha256": "1464cc295e5d8b8cf7f2d265c81e7ad8912851294b0372bbb96ce8733168d088"
+    },
+    "input_controls/Hitman 2.icp": {
+      "size": 2387,
+      "sha256": "1b050bd2dbf1ac67f99d555d6d9ae5f4dfa7e8bdaa5e74b49bb57aa18a517472"
+    },
+    "input_controls/IGI 2.icp": {
+      "size": 2382,
+      "sha256": "ad3fde1bb72976aa9ba664c89102c423ee7a6a7990519b166ab91dccf2dec6fb"
+    },
+    "input_controls/index.txt": {
+      "size": 935,
+      "sha256": "1a2724cffa19dbc5c570343be12086cd101e8f24834305f4425de1e3da688035"
+    },
+    "input_controls/Infernal.icp": {
+      "size": 2411,
+      "sha256": "987be9c6b6e91a8287ee06c927274d073e9464ffdd1d40c24f74a969ebaaff1b"
+    },
+    "input_controls/La Mulana.icp": {
+      "size": 2011,
+      "sha256": "a1adfe634b872185076ac57be774317870afe8c6dfbeba963ced2df66b711ace"
+    },
+    "input_controls/Marvel Ultimate Alliance.icp": {
+      "size": 2634,
+      "sha256": "742cd1d48f72863ef89ddef80278312402d073ff0f1e0bd8a69bd75b02254274"
+    },
+    "input_controls/Mass Effect 2.icp": {
+      "size": 3217,
+      "sha256": "55ee3767afcab91468dcf810ea9ad0abfed315555d522a5a711e99f9d04f285b"
+    },
+    "input_controls/Metro 2033.icp": {
+      "size": 3476,
+      "sha256": "90c26437c4b056ce71f06aa517467d03264a77c8d22a166f0323caf6ea2b7d28"
+    },
+    "input_controls/Oblivion.icp": {
+      "size": 2389,
+      "sha256": "772a70f1e58e789bca55a7c7643f3b0cafe7ac526d04f39d4444760e1fbb2b29"
+    },
+    "input_controls/Prey.icp": {
+      "size": 2378,
+      "sha256": "a15999aa481d4117f9ae14fd2f593a8760979af5b745879b12792f227e303e7b"
+    },
+    "input_controls/Psychonauts.icp": {
+      "size": 2382,
+      "sha256": "c32d3a61fb28d8be2b31b814a45b2b3cc6dfeabc3ed8dcb2c25ee50d0d5e7fbe"
+    },
+    "input_controls/Quake 4.icp": {
+      "size": 2408,
+      "sha256": "1de5600439d59559504f834bb5d10081e4db794d8148f39dde3120fb33fca97a"
+    },
+    "input_controls/RAGE.icp": {
+      "size": 3111,
+      "sha256": "c5045dc7e8bb562a33c938713259f53f9574cd33fa0658fa40eb4f837e317309"
+    },
+    "input_controls/Rayman 3.icp": {
+      "size": 1685,
+      "sha256": "d2e81dd0eebf000a3fc577708a9e02e7ba27684551f64ff225be072bc915b962"
+    },
+    "input_controls/Risen 2.icp": {
+      "size": 2399,
+      "sha256": "06dac618c8087f13f4e4a3283412d77fed416cc49216b0e83b36b34c03997bd8"
+    },
+    "input_controls/Second Sight.icp": {
+      "size": 3300,
+      "sha256": "de7cfcb8e4cdea034b5ac5f8b909ccdbb715b4f869c7a39f41ef725b61b05bd6"
+    },
+    "input_controls/Shovel Knight.icp": {
+      "size": 1307,
+      "sha256": "cece3c197816fce1a691766603ee9ba79900a1f7dcfb53bf16135c4b8f605a48"
+    },
+    "input_controls/Singularity.icp": {
+      "size": 2413,
+      "sha256": "d39bd8b1b2684be3122d31001e3f93842654f461ac626a115f80a91ecfc0c57a"
+    },
+    "input_controls/Skyrim.icp": {
+      "size": 2396,
+      "sha256": "caeb04898cdbd78a40e8f496758dd804bf53200834951753ea54d4d3d174c3bf"
+    },
+    "input_controls/Sonic Generations.icp": {
+      "size": 2026,
+      "sha256": "76cc7b22754a7c670f7011d9a810bb9008d106b3de27c87462455cddd8a2162b"
+    },
+    "input_controls/Sonic Mania.icp": {
+      "size": 1317,
+      "sha256": "23ad9b8e7b2b524e4baac0dc6764b8e3cb75f4f1bcb315914d290d6fb32f9ade"
+    },
+    "input_controls/Spiderman Shattered Dimensions.icp": {
+      "size": 2435,
+      "sha256": "f0c01fc9cd8315cbd4bcba70c815a27d4583e6a916106fddd407f73f488eeea9"
+    },
+    "input_controls/Stalker CS.icp": {
+      "size": 2385,
+      "sha256": "22e51e2e423f30b609a88f28b481766a11fface738ec85ae12c49172bc5fcb6f"
+    },
+    "input_controls/Star Wars Jedi Knight 2.icp": {
+      "size": 2780,
+      "sha256": "bf6afc1606de205a4581d3c8053bbde501ecf06e6ed4b5132a483df78f04c6ae"
+    },
+    "input_controls/SteamWorld Dig 2.icp": {
+      "size": 1684,
+      "sha256": "da2868be5ae8d54bd93e3b3693dacd060ed8e3c0b7eddf53e3bfea208f7b6bf9"
+    },
+    "input_controls/Sunset Overdrive.icp": {
+      "size": 2033,
+      "sha256": "2487687df9991020926bc7d60814cba647fcf5a68f96c556c8931e44349942a4"
+    },
+    "input_controls/The Alliance Alive.icp": {
+      "size": 1687,
+      "sha256": "ecbcdb4a528dad6c22d3cc033a80a12e75b1774f8e646361c0a8230c40c3fef9"
+    },
+    "input_controls/The Forest.icp": {
+      "size": 3091,
+      "sha256": "1c3cee0a1414a9981071c60288e657e18b57378c494240b45a0ec034ee5f6857"
+    },
+    "input_controls/The Saboteur.icp": {
+      "size": 2926,
+      "sha256": "c37e964d6c701f38a63ad126a617b665fcab49e57eea514663cff7c78f4c585d"
+    },
+    "input_controls/Turok 2.icp": {
+      "size": 2387,
+      "sha256": "0dbdf86fffe4ab617b65c8a4e7d3ba8fe9ce2838ba50d1d31e7da2b4ef2ee913"
+    },
+    "input_controls/Turok Evolution.icp": {
+      "size": 1682,
+      "sha256": "a4056d9cb80480d5bd04d606564dcf06624c92feae0c7d607e8fde1df2101206"
+    },
+    "input_controls/Ultima Underworld.icp": {
+      "size": 3097,
+      "sha256": "e1a4a4b6cf6b9baf30770ce8f69b80231095af9de6db983dffdffae4a47f80ea"
+    },
+    "input_controls/Unepic.icp": {
+      "size": 2736,
+      "sha256": "50839abfbe2edb2b02ee037f51df9a620e9aeed577fe5ccaa5f0ae62372f0116"
+    },
+    "input_controls/Wolfenstein.icp": {
+      "size": 2391,
+      "sha256": "68d201cade50469ec6cb5342351f5b94b7309bdc92d2c09886611f535e4100b9"
+    },
+    "input_controls/Xanadu Next.icp": {
+      "size": 2549,
+      "sha256": "37bdfd9a5865632162740e13f5fbe2371857d589fa23682ff8e4b2a364cbfa8d"
+    },
+    "input_controls/Ys Origin.icp": {
+      "size": 1315,
+      "sha256": "b88a762601061436803e9f6c961ffa3c7517f6d8c7aec3cae4e562daf2c311ae"
+    },
+    "installable_components/box64/box64-0.3.3.tzst": {
+      "size": 3987449,
+      "sha256": "0aa1deef71ac392c93f30e96523fe4b6c0fc5e59e1e31247f9074b50877a8761"
+    },
+    "installable_components/box64/box64-0.3.5.tzst": {
+      "size": 4089369,
+      "sha256": "97f813d3f3b8aaf3ca1b8721db2bb5149a03171b1593b47d69862f03b4dd39c0"
+    },
+    "installable_components/box64/box64-0.3.7.tzst": {
+      "size": 4043205,
+      "sha256": "2f78d547fac9d5c01a4d935c51c24a035d63236d0c739b44b59f2da2ae30de74"
+    },
+    "installable_components/box64/index.txt": {
+      "size": 50,
+      "sha256": "02ce497f6bade7b514c75d44c860b25b245c5b81931aeb16c3f2ad7ae8230281"
+    },
+    "installable_components/dxvk/dxvk-0.96.tzst": {
+      "size": 1918701,
+      "sha256": "d9131ce35b39d775fcac627c0a8093896091e99247be5354cf351e449fd7cbce"
+    },
+    "installable_components/dxvk/dxvk-1.4.2.tzst": {
+      "size": 2226685,
+      "sha256": "14988a4be1581a1bf43571b164d619efbe927d9e15ad2174c256a2cff42a4311"
+    },
+    "installable_components/dxvk/dxvk-1.7.2.tzst": {
+      "size": 3235100,
+      "sha256": "a5d72f5b108faf8476f76d8fedd790bf9cabe361bb26b44286fed62d86a31f00"
+    },
+    "installable_components/dxvk/dxvk-2.2.tzst": {
+      "size": 3795012,
+      "sha256": "4fb3616bf9d2d89a42edf1045339b84a24e149fea5dc69635f6bc8cf7c0ad718"
+    },
+    "installable_components/dxvk/dxvk-2.3.1.tzst": {
+      "size": 3899860,
+      "sha256": "0e1104e1ebf34c0fd4d8f5e7d016ff6abcd6a5c6379120e022e5388983e47423"
+    },
+    "installable_components/dxvk/dxvk-2.5.2.tzst": {
+      "size": 4448086,
+      "sha256": "c311f79528456eb6e8be728ff8618c132e54f66eddffd43a86dfa46b030877ba"
+    },
+    "installable_components/dxvk/dxvk-2.6.1.tzst": {
+      "size": 4659590,
+      "sha256": "29a198dbc4a9e58519d4942a3725850ed23ccac36ee92d73415d5c0528a3e4b8"
+    },
+    "installable_components/dxvk/index.txt": {
+      "size": 108,
+      "sha256": "7d345e57b2bc83ae3110499962aa514f6ee9122e4af3019a0141fc76ca8e6f7f"
+    },
+    "installable_components/turnip/index.txt": {
+      "size": 56,
+      "sha256": "27e5e8d0be9fc4b3af1fb2ec541eef8ef210ef384f070af552f34fb4ce2cd225"
+    },
+    "installable_components/turnip/turnip-24.1.0.tzst": {
+      "size": 1790304,
+      "sha256": "96989279ac6e440f1c2ae73dbf7bee05b754345fa45dee905822e2a5e97576a4"
+    },
+    "installable_components/turnip/turnip-25.0.0.tzst": {
+      "size": 2059924,
+      "sha256": "4a57d0fe980b3685a0e36326de8bf9d30de86075fa4e934213b8b8cfde8f492e"
+    },
+    "installable_components/turnip/turnip-26.0.3.tzst": {
+      "size": 2427686,
+      "sha256": "085e05496ccf5056249d96f59f51d1ec3521fe52106e7926ad08c00dbe75c9c1"
+    },
+    "installable_components/vkd3d/index.txt": {
+      "size": 49,
+      "sha256": "729f25b87b963108d9017f544d10f045aa4d8f3d4bd0fccaad8f5a80187d2f88"
+    },
+    "installable_components/vkd3d/vkd3d-2.12.tzst": {
+      "size": 3649467,
+      "sha256": "9929ee5a3347c927b6becf635761bf3c47227ad96c3e4048b0ad1573d054bf09"
+    },
+    "installable_components/vkd3d/vkd3d-2.14.1.tzst": {
+      "size": 4001811,
+      "sha256": "3d37bc37845268238201a98b749a99fb6376575efd58f3530270998a95f3a5e2"
+    },
+    "installable_components/vkd3d/vkd3d-3.0b.tzst": {
+      "size": 3991584,
+      "sha256": "37bc0549e4c6f7eb291391c4e2894cbdb6346e3d4c4db547fba8b0df77a2344b"
+    },
+    "installable_components/wined3d/index.txt": {
+      "size": 52,
+      "sha256": "ce9e3e8a39c83d8ee40685293d1aa1d8a6c2ae036cabedd51958762b66a1e252"
+    },
+    "installable_components/wined3d/wined3d-10.0.tzst": {
+      "size": 3509091,
+      "sha256": "6b85af76c76ac11ca08fd96b4547eae3b4fbf11825a93f918fcd9b360b3bdb9e"
+    },
+    "installable_components/wined3d/wined3d-4.21.tzst": {
+      "size": 2081266,
+      "sha256": "48f2479432faf7b92de35816e007cd5dc0592c4dd2a507872023b0925cf830f3"
+    },
+    "installable_components/wined3d/wined3d-7.8.tzst": {
+      "size": 2985074,
+      "sha256": "7cef3d0d1c348a2b63fa4be8013d8905ddbe9e098528eda2a82e7c5811b5fbc7"
+    },
+    "wine_addons/wine-gecko-2.47.4-x86_64.msi": {
+      "size": 53898752,
+      "sha256": "e590b7d988a32d6aa4cf1d8aa3aa3d33766fdd4cf4c89c2dcc2095ecb28d066f"
+    },
+    "wine_addons/wine-gecko-2.47.4-x86.msi": {
+      "size": 55187968,
+      "sha256": "26cecc47706b091908f7f814bddb074c61beb8063318e9efc5a7f789857793d6"
+    },
+    "wine_addons/wine-mono-10.1.0-x86.msi": {
+      "size": 85491712,
+      "sha256": "c88c2431890bc32cacec8d7ea70e53a5ae4b95c8c55ca6e75ef8db0e4ccf1070"
+    }
+  }
+}

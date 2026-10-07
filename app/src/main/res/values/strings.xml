@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Winlator Secure</string>
+    <string name="unofficial_fork_notice" translatable="false">Unofficial community fork. Not affiliated with or endorsed by the upstream Winlator project. Upstream maintainers do not provide support for this build.</string>
+    <string name="stall_overlay_heading">Diagnostics</string>
+    <string name="stall_overlay_default_title">The game may be stuck</string>
+    <string name="stall_overlay_apply_fix">Apply fix and restart</string>
+    <string name="stall_overlay_keep_waiting">Keep waiting</string>
+    <string name="stall_overlay_close_game">Close game</string>
+    <string name="stall_overlay_applying">Applying fix and restarting…</string>
+    <string name="stall_overlay_apply_failed">Could not apply the fix: %1$s</string>
+    <string name="stall_overlay_tried_count">Already tried %1$d fix(es).</string>
+    <string name="stall_overlay_next_steps">If this doesn\'t help, next we\'ll try:</string>
+    <string name="stall_overlay_resolved">Fix worked — the game is running.</string>
+    <string name="enable_stall_diagnostics">Realtime black-screen diagnostics</string>
+    <string name="session_diagnostics">Live diagnostics</string>
+    <string name="run">Run</string>
+    <string name="edit">Edit</string>
+    <string name="remove">Remove</string>
+    <string name="add">Add</string>
+    <string name="shortcuts">Shortcuts</string>
+    <string name="containers">Containers</string>
+    <string name="input_controls">Input Controls</string>
+    <string name="no_items_to_display">No items to display</string>
+    <string name="new_container">New Container</string>
+    <string name="edit_container">Edit Container</string>
+    <string name="creating_container">Creating Container...</string>
+    <string name="removing_container">Removing Container...</string>
+    <string name="duplicating_container">Duplicating Container...</string>
+    <string name="container_duplicate_failed">Unable to duplicate this container.</string>
+    <string name="container_duplicate_size_unavailable">Winlator could not calculate the container size.</string>
+    <string name="container_duplicate_insufficient_storage">Not enough storage to duplicate this container. Required: %1$s; available: %2$s.</string>
+    <string name="installing_system_files">Installing System Files...</string>
+    <string name="runtime_provisioning_title">Download upstream runtime</string>
+    <string name="runtime_provisioning_consent">Winlator Secure needs runtime files from the official %1$s %2$s release (about 150 MB). The APK will be downloaded directly from GitHub, cryptographically verified, and only the required runtime archives will be imported.\n\nThe upstream runtime is provided under its own licenses. Winlator Secure is an unofficial community fork and is not affiliated with or endorsed by the upstream project. Continue with the download?</string>
+    <string name="runtime_provisioning_downloading">Downloading verified upstream runtime…</string>
+    <string name="runtime_provisioning_failed_title">Runtime download failed</string>
+    <string name="runtime_provisioning_failed">The upstream runtime could not be provisioned: %1$s No unverified files were installed.</string>
+    <string name="runtime_provisioning_error_network">The HTTPS connection failed or timed out.</string>
+    <string name="runtime_provisioning_error_http">GitHub returned an unsuccessful HTTP response.</string>
+    <string name="runtime_provisioning_error_storage">There is not enough app-private storage, or a private file could not be written.</string>
+    <string name="runtime_provisioning_error_integrity">The downloaded byte count or SHA-256 did not match the pinned release.</string>
+    <string name="runtime_provisioning_error_apk">The verified APK did not contain the exact safe runtime entries expected by this build.</string>
+    <string name="updating_system_files">Updating System Files...</string>
+    <string name="starting_up">Starting up...</string>
+    <string name="unable_to_install_system_files">Unable to install system files</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="toggle_fullscreen">Toggle Fullscreen</string>
+    <string name="exit">Exit</string>
+    <string name="close">Close</string>
+    <string name="collapse_quick_controls">Collapse quick controls</string>
+    <string name="expand_quick_controls">Expand quick controls</string>
+    <string name="switch_to_touch_mode">Switch to Direct Touch</string>
+    <string name="switch_to_mouse_mode">Switch to Mouse/Touchpad</string>
+    <string name="do_you_want_to_exit_the_game">Do you want to exit the game?</string>
+    <string name="game_text">Game Text</string>
+    <string name="game_text_enabled">Game Text enabled</string>
+    <string name="game_text_translate_toggle">Translate</string>
+    <string name="game_text_translate_on">Translation enabled</string>
+    <string name="game_text_translate_off">Translation disabled</string>
+    <string name="game_text_display_mode">Display mode</string>
+    <string name="subtitle_bar">Subtitle bar</string>
+    <string name="visual_replacement">Visual replacement</string>
+    <string name="ocr_script">OCR script</string>
+    <string name="game_text_source_language">Input language</string>
+    <string name="game_text_target_language">Output language</string>
+    <string name="game_text_translation_offline_note">Language detection is bundled and offline. Translation prepares the required on-device model over Wi-Fi before first use. Select an input language to prepare it in advance; Auto detect prepares the identified language when needed.</string>
+    <string name="game_text_prepare_translation">Prepare offline translation model</string>
+    <string name="game_text_prepare_translation_short">Prepare model</string>
+    <string name="game_text_preparing_translation">Preparing translation model over Wi-Fi...</string>
+    <string name="game_text_translation_ready">Offline translation model is ready.</string>
+    <string name="game_text_translation_prepare_failed">Translation model was not prepared: %1$s</string>
+    <string name="game_text_translation_unavailable">Translation model unavailable; showing recognized text.</string>
+    <string name="capture_interval">Capture interval</string>
+    <string name="replacement_rules">Replacement rules</string>
+    <string name="replacement_rules_hint">One rule per line: source text =&gt; replacement text</string>
+    <string name="select_capture_area">Select capture area</string>
+    <string name="reset_capture_area">Reset capture area</string>
+    <string name="preview_overlay">Preview overlay</string>
+    <string name="open_ocr_test_lab">Open OCR test lab</string>
+    <string name="game_text_test_lab_description">Test OCR, subtitle display, and replacement overlays without starting a Windows game.</string>
+    <string name="api_integrations">App integrations</string>
+    <string name="api_integrations_description">Approve signed external apps and control which Winlator capabilities each app may use. Revocation takes effect immediately.</string>
+    <string name="manage_api_integrations">Manage app integrations</string>
+    <string name="approve_installed_app">Approve installed app</string>
+    <string name="filter_installed_apps">Filter by app name or package</string>
+    <string name="no_installed_apps_found">No matching installed apps</string>
+    <string name="api_unsigned_app">The installed app has no verifiable signing certificate.</string>
+    <string name="api_app_not_installed">That package is not installed.</string>
+    <string name="approve_app_title">Approve %1$s</string>
+    <string name="api_approval_confirmation">Package: %1$s\n\nSigning certificate SHA-256: %2$s\n\nSelect the capabilities this app may use.</string>
+    <string name="approve">Approve</string>
+    <string name="revoke_approval">Revoke approval</string>
+    <string name="restore_approval">Restore approval</string>
+    <string name="revoked">revoked</string>
+    <string name="active">active</string>
+    <string name="not_installed">Not installed</string>
+    <string name="api_integration_details">Type: %1$s\nScopes: %2$s\nStatus: %3$s</string>
+    <string name="run_ocr">Run OCR</string>
+    <string name="game_text_recognizing">Recognizing sample text...</string>
+    <string name="game_text_recognition_failed">Game text recognition failed. Check logs for details.</string>
+    <string name="game_text_strong_ocr">Strong OCR</string>
+    <string name="game_text_strong_full_screen">SCAN FULL SCREEN</string>
+    <string name="game_text_strong_drag_hint">Drag around text to scan. Back cancels.</string>
+    <string name="game_text_strong_processing">Strong OCR is scanning the frozen image...</string>
+    <string name="game_text_strong_no_text">Strong OCR did not recognize any text.</string>
+    <string name="game_text_strong_failed">Strong OCR failed to process this image.</string>
+    <string name="game_text_strong_busy">Strong OCR is already processing an image.</string>
+    <string name="game_text_inspection_hint">Tap a detected box to rescan that line.</string>
+    <string name="game_text_strong_enable_first">Enable Game Text before using Strong OCR.</string>
+    <string name="game_text_test_ready">Edit the sample and replacement, then run OCR or preview the overlay.</string>
+    <string name="game_text_test_detected">OCR completed: %1$d line(s) detected.</string>
+    <string name="game_text_test_translated">OCR completed: %1$d line(s); translated from %2$s.</string>
+    <string name="game_text_test_failed">OCR failed: %1$s</string>
+    <string name="game_text_preview_ready">Deterministic overlay preview is active.</string>
+    <string name="no_control_element_selected">No control element selected</string>
+    <string name="scale">Scale</string>
+    <string name="shape">Shape</string>
+    <string name="type">Type</string>
+    <string name="binding">Binding</string>
+    <string name="binding_up">Binding Up</string>
+    <string name="binding_right">Binding Right</string>
+    <string name="binding_down">Binding Down</string>
+    <string name="binding_left">Binding Left</string>
+    <string name="overlay_opacity">Overlay Opacity</string>
+    <string name="opacity">Opacity</string>
+    <string name="profile">Profile</string>
+    <string name="select_profile">Select Profile</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="name">Name</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="untitled">Untitled</string>
+    <string name="no_profile_selected">No profile selected</string>
+    <string name="no_profile_found">No profile found</string>
+    <string name="do_you_want_to_remove_this_profile">Do you want to remove this profile?</string>
+    <string name="do_you_want_to_duplicate_this_profile">Do you want to duplicate this profile?</string>
+    <string name="do_you_want_to_duplicate_this_preset">Do you want to duplicate this preset?</string>
+    <string name="do_you_want_to_remove_this_container">Do you want to remove this container?</string>
+    <string name="agm_shared_container_summary">AGM shared - %1$d game(s): %2$s</string>
+    <string name="agm_isolated_container_summary">AGM isolated - %1$s</string>
+    <string name="agm_container_delete_blocked">This container is managed by AGM and is still referenced by %1$d game(s). Delete games through AGM first.</string>
+    <string name="agm_shared_container_delete_blocked">This AGM shared container is reserved and cannot be deleted from Winlator.</string>
+    <string name="agm_container_status_failed">Winlator could not read the AGM container registry.</string>
+    <string name="do_you_want_to_duplicate_this_container">Do you want to duplicate this container?</string>
+    <string name="do_you_want_to_remove_this_file">Do you want to remove this file?</string>
+    <string name="do_you_want_to_remove_this_controller">Do you want to remove this controller?</string>
+    <string name="do_you_want_to_remove_this_wine_version">Do you want to remove this Wine version?</string>
+    <string name="do_you_want_to_remove_this_preset">Do you want to remove this preset?</string>
+    <string name="do_you_want_to_remove_this_component_version">Do you want to remove this component version?</string>
+    <string name="do_you_want_to_end_this_process">Do you want to end this process?</string>
+    <string name="controls_editor">Controls Editor</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="container">Container</string>
+    <string name="screen_size">Screen Size</string>
+    <string name="new_environment_variable">New Environment Variable</string>
+    <string name="environment_variables">Environment Variables</string>
+    <string name="value">Value</string>
+    <string name="processor_affinity">Processor Affinity</string>
+    <string name="processor_affinity_32_bit_apps">Processor Affinity (32-bit apps)</string>
+    <string name="cursor_speed">Cursor Speed</string>
+    <string name="relative_mouse_movement">Relative Mouse Movement</string>
+    <string name="direct_touch_mode">Direct Touch Mode</string>
+    <string name="toggle_switch">Toggle Switch</string>
+    <string name="profile_exported_to">Profile exported to</string>
+    <string name="unable_to_import_profile">Unable to import profile</string>
+    <string name="wine_configuration">Wine Configuration</string>
+    <string name="enable_csmt">Enable CSMT (Command Stream Multi-Thread)</string>
+    <string name="gpu_name">GPU Name</string>
+    <string name="offscreen_rendering_mode">Offscreen Rendering Mode</string>
+    <string name="enable_strict_shader_math">Enable Strict Shader Math</string>
+    <string name="video_memory_size">Video Memory Size</string>
+    <string name="none">None</string>
+    <string name="custom_text">Custom Text</string>
+    <string name="icon">Icon</string>
+    <string name="import_profile">Import Profile</string>
+    <string name="export_profile">Export Profile</string>
+    <string name="touchpad_help">Touchpad Help</string>
+    <string name="touchpad_help_mouse_left_click_title">Mouse Left-Click</string>
+    <string name="touchpad_help_mouse_left_click_description">Short tap with one finger</string>
+    <string name="touchpad_help_mouse_right_click_title">Mouse Right-Click</string>
+    <string name="touchpad_help_mouse_right_click_description">Tap with one finger and short tap with another finger</string>
+    <string name="touchpad_help_mouse_scroll_wheel_title">Mouse Scroll Wheel</string>
+    <string name="touchpad_help_mouse_scroll_wheel_description">Two fingers tap and move</string>
+    <string name="touchpad_help_main_menu_title">Main Menu</string>
+    <string name="touchpad_help_main_menu_description">Four fingers tap</string>
+    <string name="direct_touch_help">Direct Touch Help</string>
+    <string name="direct_touch_help_tap_title">Tap</string>
+    <string name="direct_touch_help_tap_description">Touch a Windows control to click it directly</string>
+    <string name="direct_touch_help_drag_title">Drag</string>
+    <string name="direct_touch_help_drag_description">Keep your finger down and move it to drag</string>
+    <string name="direct_touch_help_switch_title">Touchpad Gestures</string>
+    <string name="direct_touch_help_switch_description">Use Android Back to open the menu, then turn off Direct Touch Mode in Input Controls to restore scrolling and right-click gestures</string>
+    <string name="duplicate">Duplicate</string>
+    <string name="about">About</string>
+    <string name="credits_and_third_party_apps">Credits and Third-party apps</string>
+    <string name="external_controllers">External Controllers</string>
+    <string name="graphics_driver">Graphics Driver</string>
+    <string name="audio_driver">Audio Driver</string>
+    <string name="wine_locale">Wine Locale</string>
+    <string name="desktop_mode">Desktop Mode</string>
+    <string name="loading">Loading...</string>
+    <string name="press_any_button_on_your_controller">Press any button on your controller</string>
+    <string name="bindings">Bindings</string>
+    <string name="show_touchscreen_controls">Show Touchscreen Controls</string>
+    <string name="dxwrapper" translatable="false">DX Wrapper</string>
+    <string name="mouse_warp_override" translatable="false">Mouse Warp Override</string>
+    <string name="direct3d" translatable="false">Direct3D</string>
+    <string name="directsound" translatable="false">DirectSound</string>
+    <string name="directinput" translatable="false">DirectInput</string>
+    <string name="xaudio" translatable="false">XAudio</string>
+    <string name="directx" translatable="false">DirectX</string>
+    <string name="settings">Settings</string>
+    <string name="exec_arguments" translatable="false">Exec Arguments</string>
+    <string name="drives">Drives</string>
+    <string name="drive">Drive</string>
+    <string name="force_fullscreen">Force Fullscreen</string>
+    <string name="range">Range</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="force">Force</string>
+    <string name="install_wine">Install Wine</string>
+    <string name="version">Version</string>
+    <string name="unable_to_install_wine">Unable to install Wine</string>
+    <string name="unable_to_remove_this_wine_version">Unable to remove this Wine version</string>
+    <string name="wine_version">Wine Version</string>
+    <string name="removing_wine">Removing Wine...</string>
+    <string name="preparing_installation">Preparing installation...</string>
+    <string name="finishing_installation">Finishing installation...</string>
+    <string name="storage_info">Storage Info</string>
+    <string name="drive_c">Drive C:</string>
+    <string name="cache" translatable="false">Cache</string>
+    <string name="total">Total</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="storage">Storage</string>
+    <string name="total_app_storage">Total app storage</string>
+    <string name="free_space">Free space</string>
+    <string name="base_system">Base system (Wine + Linux)</string>
+    <string name="downloaded_packages">Downloaded packages</string>
+    <string name="other_data">Other app data</string>
+    <string name="free_up">Free up</string>
+    <string name="calculating">Calculating\u2026</string>
+    <string name="confirm_free_downloaded">Remove all downloaded driver, DXVK/VKD3D and Wine packages? Installed containers keep working; you can re-download packages when needed.</string>
+    <string name="freed_space">Freed %s</string>
+    <string name="largest_folders">Largest folders (real on-disk size)</string>
+    <string name="estimated_used_space">Estimated Used Space</string>
+    <string name="advanced">Advanced</string>
+    <string name="box64" translatable="false">Box64</string>
+    <string name="system">System</string>
+    <string name="box64_preset">Box64 Preset</string>
+    <string name="box64_version">Box64 Version</string>
+    <string name="letter">Letter</string>
+    <string name="target_path">Target Path</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="old">old</string>
+    <string name="_new">new</string>
+    <string name="task_manager">Task Manager</string>
+    <string name="process_name">Process Name</string>
+    <string name="pid" translatable="false">PID</string>
+    <string name="memory">Memory</string>
+    <string name="battery">Battery</string>
+    <string name="end_process">End Process</string>
+    <string name="new_task">New Task</string>
+    <string name="processes">Processes</string>
+    <string name="orientation">Orientation</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="open_file">Open File</string>
+    <string name="download_file">Download File</string>
+    <string name="do_you_want_to_download_the_selected_profiles">Do you want to download the selected profiles?</string>
+    <string name="downloading_file">Downloading File...</string>
+    <string name="a_network_error_occurred">A network error occurred</string>
+    <string name="copy">Copy</string>
+    <string name="installed_version">Installed Version</string>
+    <string name="unable_to_download_file">Unable to download file</string>
+    <string name="stability">Stability</string>
+    <string name="conservative">Conservative</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="performance">Performance</string>
+    <string name="preset">Preset</string>
+    <string name="you_cannot_remove_this_preset">You cannot remove this preset</string>
+    <string name="you_cannot_remove_this_component_version">You cannot remove this component version</string>
+    <string name="dxwrapper_help_content"><![CDATA[
+        <i><b>WineD3D</b></i> is a translation layer for DirectX 1-11 to OpenGL.<br /><br />
+        <i><b>DXVK</b></i> is a translation layer for Direct3D 9-11 to Vulkan.<br /><br />
+        <i><b>VKD3D</b></i> is a translation layer for Direct3D 12 API to Vulkan.<br /><br />
+        <i><b>CNC DDraw</b></i> is an implementation of DirectDraw for better compatibility with classic games.
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_safeflags" translatable="false"><![CDATA[
+        Handling of flags on CALL/RET opcodes<br /><br />
+        <b>0</b> : Treats CALL/RET as if it never needed flags (faster, unstable)<br />
+        <b>1</b> : Most RET will need flags, most CALLS will not<br />
+        <b>2</b> : All CALL/RET will need flags (slower)
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_fastnan" translatable="false">Generation of -NAN like on x86</string>
+    <string name="box64_env_var_help__dynarec_fastround" translatable="false"><![CDATA[
+        Generation of precise x86 rounding<br /><br />
+        <b>0</b> : Generate float/double -> int rounding like on x86<br />
+        <b>1</b> : Don\'t do anything special with edge case Rounding, to go as fast as possible (no INF/NAN/Overflow -> MIN_INT conversion)<br />
+        <b>2</b> : Everything from 1 plus also fast round of double -> float (not taking into account current rounding mode)
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_x87double" translatable="false">Use of Float/Double for x87 emulation</string>
+    <string name="box64_env_var_help__dynarec_bigblock" translatable="false"><![CDATA[
+        Dynarec building BigBlock<br /><br />
+        <b>0</b> : Don\'t try to build block as big as possible<br />
+        <b>1</b> : Build Dynarec block as big as possible<br />
+        <b>2</b> : Build Dynarec block bigger (continue when block overlaps, but only for blocks in elf memory)<br />
+        <b>3</b> : Build Dynarec block bigger (continue when block overlaps, for all types of memory)
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_strongmem" translatable="false"><![CDATA[
+        Simulation of Strong Memory model<br /><br />
+        <b>0</b> : Don\'t try anything special<br />
+        <b>1</b> : Enable some Memory Barrier when writing to memory (on some MOV opcode)<br />
+        <b>2</b> : All 1 plus a Memory Barrier on every write to memory using MOV<br />
+        <b>3</b> : All 2 plus Memory Barrier when reading from memory and on some SSE/SSE2 opcodes
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_weakbarrier" translatable="false"><![CDATA[
+        Tweak the memory barriers to reduce the performance impact by strongmem<br /><br />
+        <b>0</b> : Use regular safe barrier<br />
+        <b>1</b> : Use weak barriers to have more performance boost<br />
+        <b>2</b> : All in 1, plus disabled the last write barriers
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_forward" translatable="false">Defines the max allowed forward value when building Block</string>
+    <string name="box64_env_var_help__dynarec_callret" translatable="false">Optimization of CALL/RET opcodes</string>
+    <string name="box64_env_var_help__dynarec_wait" translatable="false">Defines whether or not Dynarec will wait for the FillBlock to be ready</string>
+    <string name="box64_env_var_help__dynarec_nativeflags" translatable="false">The generated code will use native flags, if possible</string>
+    <string name="columns">Columns</string>
+    <string name="directinput_mapper_type">DirectInput Mapper Type</string>
+    <string name="desktop">Desktop</string>
+    <string name="theme">Theme</string>
+    <string name="background">Background</string>
+    <string name="max_device_memory">Max Device Memory</string>
+    <string name="frame_rate">Frame Rate</string>
+    <string name="configuration">Configuration</string>
+    <string name="browse">Browse</string>
+    <string name="magnifier">Magnifier</string>
+    <string name="auto_clicker">Auto Clicker</string>
+    <string name="auto_clicker_enabled">Auto-clicker: ON</string>
+    <string name="auto_clicker_disabled">Auto-clicker: OFF</string>
+    <string name="auto_clicker_interval">Interval between clicks</string>
+    <string name="auto_clicker_set_location">Drag the crosshair to set where clicks land</string>
+    <string name="done">Done</string>
+    <string name="bring_to_front">Bring to Front</string>
+    <string name="options">Options</string>
+    <string name="logs">Logs</string>
+    <string name="enable_wine_debug">Enable Wine debug</string>
+    <string name="box64_logs">Box64 Logs</string>
+    <string name="export">Export</string>
+    <string name="logs_exported_to">Logs exported to</string>
+    <string name="general">General</string>
+    <string name="startup_selection">Startup Selection</string>
+    <string name="wine_debug_channel">Wine Debug Channel</string>
+    <string name="save_logs_to_file">Save logs to file</string>
+    <string name="new_folder">New Folder</string>
+    <string name="view_style">View Style</string>
+    <string name="there_already_file_with_that_name">There is already a file with that name</string>
+    <string name="cut">Cut</string>
+    <string name="copying_files">Copying Files...</string>
+    <string name="removing_files">Removing Files...</string>
+    <string name="disable_mouse_input">Disable Mouse Input</string>
+    <string name="move_cursor_to_touchpoint">Move Cursor to Touchpoint</string>
+    <string name="sync_every_frame">Sync every frame</string>
+    <string name="dpi_font_size">DPI (Font Size)</string>
+    <string name="gamepad_model">Gamepad Model</string>
+    <string name="file_manager">File Manager</string>
+    <string name="documents">Documents</string>
+    <string name="items">items</string>
+    <string name="you_cannot_paste_files_here">You cannot paste files here</string>
+    <string name="information">Information</string>
+    <string name="rename">Rename</string>
+    <string name="location">Location</string>
+    <string name="file">File</string>
+    <string name="folder">Folder</string>
+    <string name="size">Size</string>
+    <string name="modified">Modified</string>
+    <string name="contains">Contains</string>
+    <string name="favorites">Favorites</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="file_added_to_favorites">File added to Favorites</string>
+    <string name="game_controllers">Game Controllers</string>
+    <string name="home">Home</string>
+    <string name="custom_device">Custom Device</string>
+    <string name="reinstall_system_files">Reinstall System Files</string>
+    <string name="do_you_want_to_reinstall_system_files">Do you want to reinstall system files?</string>
+    <string name="manage_prerequisites">Manage/Reinstall Prerequisites</string>
+    <string name="prerequisites_title">Windows Prerequisites</string>
+    <string name="prerequisites_for_container">Container: %1$s</string>
+    <string name="prerequisites_description">Selected Microsoft prerequisites are downloaded directly from Microsoft, verified, and installed into the AGM shared Wine container. No Microsoft files are included in Winlator or its update feed.</string>
+    <string name="prerequisites_plan_status">Setup plan %1$d: %2$s</string>
+    <string name="prerequisite_installed">%1$s — installed</string>
+    <string name="prerequisite_missing">%1$s — not installed</string>
+    <string name="install_selected_prerequisites">Install selected prerequisites</string>
+    <string name="reinstall_selected_prerequisites">Reinstall selected prerequisites</string>
+    <string name="preparing_prerequisites">Preparing prerequisite downloads…</string>
+    <string name="downloading_prerequisites">Downloading prerequisites: %1$d%%</string>
+    <string name="downloaded_prerequisites">Verified %1$d of %2$d downloads</string>
+    <string name="all_missing_prerequisites_required">All missing prerequisites must be selected before AGM can use the shared container.</string>
+    <string name="prerequisites_license_acceptance">I have reviewed and accept the linked vendor license terms for the selected prerequisites.</string>
+    <string name="prerequisites_acceptance_required">Accept the linked vendor terms before continuing.</string>
+    <string name="retry">Retry</string>
+    <string name="installing_windows_prerequisite">Installing %1$s…\nThis may take several minutes.</string>
+    <string name="mouse">Mouse</string>
+    <string name="cursor_size">Cursor Size</string>
+    <string name="color">Color</string>
+    <string name="volume">Volume</string>
+    <string name="average_latency">Average Latency</string>
+    <string name="performance_mode">Performance Mode</string>
+    <string name="audio">Audio</string>
+    <string name="opengl_version">OpenGL Version</string>
+    <string name="disable_vertex_array_bgra">Disable vertex array BGRA</string>
+    <string name="screen_effect">Screen Effect</string>
+    <string name="enable_fxaa">Enable FXAA</string>
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="gamma">Gamma</string>
+    <string name="color_adjustment">Color Adjustment</string>
+    <string name="reset">Reset</string>
+    <string name="enable_crt_shader">Enable CRT Shader</string>
+    <string name="open_directory">Open Directory</string>
+    <string name="locations">Locations</string>
+    <string name="downloads">Downloads</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="windows_version">Windows Version</string>
+    <string name="install_component">Install Component</string>
+    <string name="open_android_browser_from_wine">Open Android Browser from Wine</string>
+    <string name="use_android_clipboard_on_Wine">Use Android Clipboard on Wine</string>
+    <string name="capture_pointer_on_external_mouse">Capture pointer on external mouse</string>
+    <string name="there_are_no_items_to_download">There are no items to download</string>
+    <string name="enable_direct_rendering">Enable direct rendering</string>
+    <string name="d3d_feature_level">D3D Feature Level</string>
+    <string name="system_font">System Font</string>
+    <string name="vulkan_version">Vulkan Version</string>
+    <string name="exposed_extensions">Exposed Extensions</string>
+    <string name="multiselection_combobox_display_text">%d of %d items</string>
+    <string name="voltage">Voltage</string>
+    <string name="current">Current</string>
+    <string name="capacity">Capacity</string>
+    <string name="sound">Sound</string>
+    <string name="midi_soundfont">MIDI SoundFont</string>
+    <string name="soundfont_unavailable">The selected MIDI SoundFont is unavailable.</string>
+    <string name="instrument">Instrument</string>
+    <string name="channel">Channel</string>
+    <string name="note">Note</string>
+    <string name="move_mouse_when_pressed">Move Mouse when pressed</string>
+    <string name="midi_input_device">MIDI Input Device</string>
+    <string name="auto">Auto</string>
+    <string name="active_windows">Active Windows</string>
+    <string name="show_desktop">Show Desktop</string>
+    <string name="language">Language</string>
+    <string name="image_cache_size">Image Cache Size</string>
+    <string name="pip_mode">PiP Mode</string>
+    <string name="adrenotools_driver" translatable="false">Adrenotools Driver</string>
+    <string name="resource_memory_type">Resource Memory Type</string>
+    <string name="zero_no_limit">0 (No limit)</string>
+    <string name="custom">Custom</string>
+    <string name="minimal">Minimal</string>
+    <string name="trace">Trace</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="image">Image</string>
+    <string name="solid_color">Solid Color</string>
+    <string name="startup_selection_normal">Normal (Load all services)</string>
+    <string name="startup_selection_essential">Essential (Load only essential services)</string>
+    <string name="startup_selection_aggressive">Aggressive (Load minimal services)</string>
+    <string name="both">Both</string>
+    <string name="low_latency">Low Latency</string>
+    <string name="power_saving">Power Saving</string>
+    <string name="player">Player</string>
+    <string name="gamepad">Gamepad</string>
+    <string name="enable_vibration">Enable Vibration</string>
+    <string name="mode">Mode</string>
+    <string name="external_controller">External Controller</string>
+    <string name="controls_profile">Controls Profile</string>
+    <string name="do_you_want_to_reset_configurations">Do you want to reset the configurations?</string>
+    <string name="the_settings_have_been_changed_do_you_want_to_restart_the_app">The settings have been changed. Do you want to restart the app?</string>
+    <string name="hud_mode">HUD Mode</string>
+    <string name="simple_fps">Simple (FPS)</string>
+    <string name="full">Full</string>
+    <string name="ddraw_wrapper" translatable="false">DDraw Wrapper</string>
+    <string name="renderer">Renderer</string>
+    <string name="default_no_override">Default (No override)</string>
+    <string name="runtime_locale_failed">The game locale could not be prepared: %1$s</string>
+
+    <!-- Runtime Dependency Manager -->
+    <string name="rdm_title">Runtime Dependencies</string>
+    <string name="rdm_container_header">Container: %1$s (ID %2$d)</string>
+    <string name="rdm_container_not_found">Container %1$d not found.</string>
+    <string name="rdm_load_error">Error loading dependency info: %1$s</string>
+    <string name="rdm_single_game_context">Managing for: %1$s</string>
+    <string name="rdm_no_games_on_container">No managed games are using this container.</string>
+    <string name="rdm_shared_container_warning">⚠ Changes affect %1$d games sharing this container: %2$s</string>
+    <string name="rdm_section_supported">Supported Runtimes</string>
+    <string name="rdm_section_wrapper_config">DirectX (via Wrapper)</string>
+    <string name="rdm_section_unsupported">Unsupported Runtimes</string>
+    <string name="rdm_status_installed">✔ Installed</string>
+    <string name="rdm_status_installing">Installing…</string>
+    <string name="rdm_status_failed">✘ Failed</string>
+    <string name="rdm_status_not_installed">Not installed</string>
+    <string name="rdm_installer_path_label">File: %1$s</string>
+    <string name="rdm_select_installer">Select Installer…</string>
+    <string name="rdm_install">Install</string>
+    <string name="rdm_repair">Repair</string>
+    <string name="rdm_not_supported">Not Supported</string>
+    <string name="rdm_wrapper_config_note">Configured via wrapper settings — not user-installable here.</string>
+    <string name="rdm_confirm_install_runtime">Install %1$s on this container?</string>
+    <string name="rdm_confirm_shared_warning">This will affect %1$d managed games sharing the container:</string>
+    <string name="rdm_confirm_install_ok">Install</string>
+    <string name="rdm_rootfs_not_ready">Open Winlator once to finish initial setup before installing runtimes.</string>
+    <string name="rdm_winlator_busy">Close the currently running Winlator session first.</string>
+    <string name="rdm_installer_file_missing">The selected installer file no longer exists. Please select it again.</string>
+    <string name="rdm_prepare_failed">Could not prepare container: %1$s</string>
+    <string name="rdm_launch_failed">Could not launch installer: %1$s</string>
+    <string name="rdm_installer_path_unresolvable">Could not resolve the selected file path. Please use a file from internal or external storage.</string>
+</resources>

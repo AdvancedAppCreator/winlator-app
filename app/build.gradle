@@ -1,0 +1,225 @@
+apply plugin: 'com.android.application'
+
+def signingPropertiesPath = System.getenv('WINLATOR_SIGNING_PROPERTIES')
+def signingPropertiesFile = signingPropertiesPath ? new File(signingPropertiesPath) : null
+def signingProperties = new Properties()
+if (signingPropertiesFile?.isFile()) {
+    signingPropertiesFile.withInputStream { signingProperties.load(it) }
+}
+def buildConfigString = { value ->
+    "\"${value.toString().replace('\\', '\\\\').replace('\"', '\\\"')}\""
+}
+def officialAgmPackage = 'com.advancedappcreator.adultgamemanager'
+def officialAgmCertSha256 =
+        'f2e2d51bdf36d9ab1ce2b9a4fedbf12e6a95bece274476a4aaefb0ab2dd7d509'
+def thirdPartyLock = rootProject.file('third_party/dependencies.lock.json')
+def thirdPartyPreparer = rootProject.file('tools/prepare_third_party.py')
+def generatedThirdPartyDir = layout.buildDirectory.dir('generated/thirdParty')
+def generatedBuiltThirdPartyDir = layout.buildDirectory.dir('generated/builtThirdParty')
+def pythonExecutable = System.getenv('WINLATOR_PYTHON') ?: 'python'
+
+tasks.register('prepareThirdPartyInputs', Exec) {
+    inputs.file(thirdPartyLock)
+    inputs.file(thirdPartyPreparer)
+    outputs.dir(generatedThirdPartyDir)
+    commandLine(
+            pythonExecutable,
+            thirdPartyPreparer,
+            '--lock', thirdPartyLock,
+            '--output', generatedThirdPartyDir.get().asFile
+    )
+    if (project.hasProperty('offlineThirdParty')) args '--offline'
+}
+
+tasks.register('prepareBox64Inputs', Exec) {
+    dependsOn tasks.named('prepareThirdPartyInputs')
+    inputs.files(
+            rootProject.file('tools/box64_build_config.py'),
+            rootProject.file('tools/build_box64.py'),
+            rootProject.file('tools/build_box64_launcher.py'),
+            rootProject.file('tools/package_box64.py'),
+            rootProject.file('tools/box64_launcher.c'),
+            rootProject.file('tools/patches/box64-android-egl-fallback.patch'),
+            rootProject.file('app/src/main/assets/box64/box64-0.4.3-3.provenance.json')
+    )
+    outputs.files(
+            generatedBuiltThirdPartyDir.map { it.file('assets/box64/box64-0.4.3-3.tzst') },
+            generatedBuiltThirdPartyDir.map { it.file('jniLibs/arm64-v8a/libbox64.so') },
+            generatedBuiltThirdPartyDir.map { it.file('jniLibs/arm64-v8a/libbox64launcher.so') },
+            generatedBuiltThirdPartyDir.map { it.file('jniLibs/arm64-v8a/libglibcloader.so') }
+    )
+    commandLine(
+            pythonExecutable,
+            rootProject.file('tools/build_box64.py'),
+            '--inputs', generatedThirdPartyDir.get().dir('buildInputs').asFile
+    )
+}
+
+tasks.register('prepareCompatibilityFonts', Exec) {
+    dependsOn tasks.named('prepareThirdPartyInputs')
+    inputs.file(rootProject.file('tools/prepare_compat_fonts.py'))
+    inputs.file(rootProject.file('requirements-build.txt'))
+    inputs.files(
+            generatedThirdPartyDir.map { it.file('assets/fonts/VL-Gothic-Regular.ttf') },
+            generatedThirdPartyDir.map { it.file('assets/fonts/VL-PGothic-Regular.ttf') }
+    )
+    outputs.files(
+            generatedBuiltThirdPartyDir.map { it.file('assets/fonts/MS-Gothic-Compatible.ttf') },
+            generatedBuiltThirdPartyDir.map { it.file('assets/fonts/MS-PGothic-Compatible.ttf') },
+            generatedBuiltThirdPartyDir.map { it.file('assets/fonts/MS-UIGothic-Compatible.ttf') }
+    )
+    commandLine(
+            pythonExecutable,
+            rootProject.file('tools/prepare_compat_fonts.py'),
+            '--input', generatedThirdPartyDir.get().dir('assets/fonts').asFile,
+            '--output', generatedBuiltThirdPartyDir.get().dir('assets/fonts').asFile
+    )
+}
+
+tasks.register('prepareNdkRuntime', Copy) {
+    def androidSdk = System.getenv('ANDROID_HOME') ?: System.getenv('ANDROID_SDK_ROOT')
+    if (!androidSdk) {
+        throw new GradleException('ANDROID_HOME or ANDROID_SDK_ROOT is required')
+    }
+    def runtime = file(
+            "${androidSdk}/ndk/27.2.12479018/toolchains/llvm/prebuilt/" +
+                    "windows-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so"
+    )
+    inputs.file(runtime)
+    from(runtime)
+    into(generatedBuiltThirdPartyDir.map { it.dir('jniLibs/arm64-v8a') })
+}
+
+android {
+    compileSdk 34
+
+    signingConfigs {
+        release {
+            if (signingPropertiesFile?.isFile()) {
+                def configuredStoreFile = new File(signingProperties['storeFile'])
+                storeFile configuredStoreFile.isAbsolute()
+                    ? configuredStoreFile
+                    : new File(signingPropertiesFile.parentFile, signingProperties['storeFile'])
+                storePassword signingProperties['storePassword']
+                keyAlias signingProperties['keyAlias']
+                keyPassword signingProperties['keyPassword']
+            }
+        }
+    }
+
+    defaultConfig {
+        applicationId 'com.winlator.secure'
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 110181
+        versionName "11.1-secure.81"
+
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+
+        // Optional base URL for a curated graphics-driver feed (Turnip / Adrenotools packages).
+        // Left empty by default so builds fall back to the upstream component feed. Provide a
+        // value out-of-tree (e.g. in ~/.gradle/gradle.properties or with -PcuratedDriverFeedUrl=...)
+        // to point at your own hosting; nothing private is committed to the repository.
+        buildConfigField "String", "CURATED_DRIVER_FEED_URL",
+                buildConfigString(project.findProperty('curatedDriverFeedUrl') ?: '')
+        buildConfigField "String", "FACTORY_INTEGRATION_PACKAGE",
+                buildConfigString(
+                        project.findProperty('factoryIntegrationPackage') ?: officialAgmPackage
+                )
+        buildConfigField "String", "FACTORY_INTEGRATION_CERT_SHA256",
+                buildConfigString(
+                        project.findProperty('factoryIntegrationCertSha256')
+                                ?: officialAgmCertSha256
+                )
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            if (signingPropertiesFile?.isFile()) signingConfig signingConfigs.release
+        }
+    }
+
+    packagingOptions {
+        doNotStrip '**/libbox64.so'
+        doNotStrip '**/libbox64launcher.so'
+        doNotStrip '**/libglibcloader.so'
+        pickFirst '**/libc++_shared.so'
+        pickFirst '**/libFLAC.so'
+        pickFirst '**/libfluidsynth.so'
+        pickFirst '**/libfluidsynth-assetloader.so'
+        pickFirst '**/libgio-2.0.so'
+        pickFirst '**/libglib-2.0.so'
+        pickFirst '**/libgmodule-2.0.so'
+        pickFirst '**/libgobject-2.0.so'
+        pickFirst '**/libgthread-2.0.so'
+        pickFirst '**/libinstpatch-1.0.so'
+        pickFirst '**/liboboe.so'
+        pickFirst '**/libogg.so'
+        pickFirst '**/libopus.so'
+        pickFirst '**/libpcre.so'
+        pickFirst '**/libpcreposix.so'
+        pickFirst '**/libsndfile.so'
+        pickFirst '**/libvorbis.so'
+        pickFirst '**/libvorbisenc.so'
+        pickFirst '**/libvorbisfile.so'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    testOptions {
+        unitTests.includeAndroidResources = true
+    }
+
+    ndkVersion '24.0.8215888'
+
+    externalNativeBuild {
+        cmake {
+            version '3.22.1'
+            path 'src/main/cpp/CMakeLists.txt'
+        }
+
+        sourceSets {
+            main {
+                assets.srcDir generatedThirdPartyDir.map { it.dir('assets') }
+                jniLibs.srcDir generatedThirdPartyDir.map { it.dir('jniLibs') }
+                assets.srcDir generatedBuiltThirdPartyDir.map { it.dir('assets') }
+                jniLibs.srcDir generatedBuiltThirdPartyDir.map { it.dir('jniLibs') }
+            }
+        }
+    }
+
+    tasks.named('preBuild').configure {
+        dependsOn tasks.named('prepareBox64Inputs')
+        dependsOn tasks.named('prepareCompatibilityFonts')
+        dependsOn tasks.named('prepareNdkRuntime')
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.mlkit:text-recognition:16.0.1'
+    implementation 'com.google.mlkit:text-recognition-chinese:16.0.1'
+    implementation 'com.google.mlkit:text-recognition-devanagari:16.0.1'
+    implementation 'com.google.mlkit:text-recognition-japanese:16.0.1'
+    implementation 'com.google.mlkit:text-recognition-korean:16.0.1'
+    implementation 'com.google.mlkit:language-id:17.0.6'
+    implementation 'com.google.mlkit:translate:17.0.3'
+    implementation 'com.github.luben:zstd-jni:1.5.2-3@aar'
+    implementation 'org.tukaani:xz:1.7'
+    implementation 'org.apache.commons:commons-compress:1.20'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'androidx.test:core:1.5.0'
+    testImplementation 'org.json:json:20231013'
+    testImplementation 'org.robolectric:robolectric:4.10.3'
+}

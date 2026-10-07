@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#CC202020"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_clicker"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/auto_clicker_set_location"
+        android:textColor="#CCCCCC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/auto_clicker_interval"
+        android:textColor="#FFFFFF" />
+
+    <com.winlator.widget.SeekBar
+        android:id="@+id/SBAutoClickerInterval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:suffix="ms"
+        app:step="50"
+        app:minValue="50"
+        app:maxValue="5000" />
+
+    <Button
+        android:id="@+id/BTAutoClickerDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:text="@string/done" />
+</LinearLayout>

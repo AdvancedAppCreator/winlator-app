@@ -1,0 +1,26 @@
+diff --git a/src/wrapped/wrappedlibegl.c b/src/wrapped/wrappedlibegl.c
+index c94482ac..04a5032f 100644
+--- a/src/wrapped/wrappedlibegl.c
++++ b/src/wrapped/wrappedlibegl.c
+@@ -19,6 +19,21 @@
+ 
+ const char* libeglName = "libEGL.so.1";
+ #define LIBNAME libegl
++#ifdef WINLATOR_ANDROID_EGL_FALLBACK
++// This is the 64-bit wrapper; do not fall back to Android's 32-bit EGL path.
++#define ALTNAME "/system/lib64/libEGL.so"
++#define PRE_INIT \
++    printf_log(LOG_INFO, "EGL: trying %s before Android fallback %s\n", libeglName, ALTNAME);
++
++static void log_egl_library(const library_t* lib)
++{
++    if (!strcmp(lib->path, ALTNAME))
++        printf_log(LOG_INFO, "EGL: using Android fallback %s\n", ALTNAME);
++    else
++        printf_log(LOG_INFO, "EGL: using native %s\n", lib->path);
++}
++#define CUSTOM_INIT log_egl_library(lib);
++#endif
+ 
+ #include "generated/wrappedlibegltypes.h"
+ 

@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "artifacts": [
+    {
+      "id": "winlator-upstream-v11.1.0",
+      "url": "https://github.com/brunodev85/winlator/releases/download/v11.1.0/Winlator_11.1.apk",
+      "size": 156943882,
+      "sha256": "80bdea17d8497a2ae0ff637e68d82a884ccc5ca4406880950b96fd2483e50970",
+      "license": "LGPL-2.1-only",
+      "source": {
+        "repository": "https://github.com/brunodev85/winlator-app",
+        "revision": "7e2699213a1e6282263706392ba6b644a2178e3b"
+      },
+      "prefixes": [
+        {
+          "archivePrefix": "assets/inputcontrols/icons/",
+          "destinationPrefix": "assets/inputcontrols/icons/",
+          "expectedFiles": 18
+        },
+        {
+          "archivePrefix": "assets/inputcontrols/profiles/",
+          "destinationPrefix": "assets/inputcontrols/profiles/",
+          "expectedFiles": 4
+        },
+        {
+          "archivePrefix": "assets/wallpapers/",
+          "destinationPrefix": "assets/wallpapers/",
+          "expectedFiles": 6
+        }
+      ],
+      "entries": [
+        {
+          "archivePath": "assets/dxwrapper/cnc-ddraw-6.6/ddraw.tzst",
+          "destination": "assets/dxwrapper/cnc-ddraw-6.6/ddraw.tzst",
+          "size": 166133,
+          "sha256": "eabb2d59ce7060767996d0c9597ee8772059126a3af01698e59a5e7905e49867"
+        },
+        {
+          "archivePath": "assets/dxwrapper/d7vk-1.11.tzst",
+          "destination": "assets/dxwrapper/d7vk-1.11.tzst",
+          "size": 2839791,
+          "sha256": "c737c5ec4c6d4bbbad4e9eafdcc22efda34ae4c274713b40246b3a5fb472c05d"
+        },
+        {
+          "archivePath": "assets/dxwrapper/d8vk-1.0.tzst",
+          "destination": "assets/dxwrapper/d8vk-1.0.tzst",
+          "size": 1851455,
+          "sha256": "da30a104f83f619214a3bc67c971434837e1a11ca30703d0f79041a93f2be246"
+        },
+        {
+          "archivePath": "assets/dxwrapper/dxvk-1.10.3.tzst",
+          "destination": "assets/dxwrapper/dxvk-1.10.3.tzst",
+          "size": 3554248,
+          "sha256": "18ed7c263e0d52c4bbd0e7345b4f22908c10966f37d7d6d80c639ec45123075a"
+        },
+        {
+          "archivePath": "assets/dxwrapper/dxvk-2.4.1.tzst",
+          "destination": "assets/dxwrapper/dxvk-2.4.1.tzst",
+          "size": 4322727,
+          "sha256": "897cc48500241006c15c62f200e9a6e1ea8a674bd285da25df6f68fdcdbfe42e"
+        },
+        {
+          "archivePath": "assets/dxwrapper/vkd3d-2.14.1.tzst",
+          "destination": "assets/dxwrapper/vkd3d-2.14.1.tzst",
+          "size": 2359119,
+          "sha256": "354b43b84df136683c7ad9cb80e125b4a357de7459fab9ac8b56d5fe4a617687"
+        },
+        {
+          "archivePath": "assets/graphics_driver/gladio-1.0.tzst",
+          "destination": "assets/graphics_driver/gladio-1.0.tzst",
+          "size": 106313,
+          "sha256": "85479adf45f803fce557da76f63fcb18deba19d560ef7a8e898dd00f47f7a618"
+        },
+        {
+          "archivePath": "assets/graphics_driver/turnip-26.1.0.tzst",
+          "destination": "assets/graphics_driver/turnip-26.1.0.tzst",
+          "size": 2505432,
+          "sha256": "9b4a10975456197e403c2b6a8a9781a8fd42ccf5048262a8cdea6538bb68d288"
+        },
+        {
+          "archivePath": "assets/graphics_driver/virgl-23.1.9.tzst",
+          "destination": "assets/graphics_driver/virgl-23.1.9.tzst",
+          "size": 3481269,
+          "sha256": "614b1edc8e47c57b2cbb2d96f9c7ab5f5b1a89038de618a58b2faf9c64380e09"
+        },
+        {
+          "archivePath": "assets/graphics_driver/vortek-2.1.tzst",
+          "destination": "assets/graphics_driver/vortek-2.1.tzst",
+          "size": 122973,
+          "sha256": "f2cce15552bc6ff195823bf066ad1a421cb1f453bf80afa3ccd925ff0b1a5713"
+        },
+        {
+          "archivePath": "assets/graphics_driver/zink-22.2.5.tzst",
+          "destination": "assets/graphics_driver/zink-22.2.5.tzst",
+          "size": 3874501,
+          "sha256": "b9fc365f894a4b837cfd97861972e95c680b5e744691b508f49b9a06d9e3153c"
+        },
+        {
+          "archivePath": "assets/pulseaudio.tzst",
+          "destination": "assets/pulseaudio.tzst",
+          "size": 45548,
+          "sha256": "a31d331e1f1ec514d8287b830c1668c1d65a9b34c21010bd918eca43d2f4947f"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libltdl.so",
+          "destination": "jniLibs/arm64-v8a/libltdl.so",
+          "size": 34424,
+          "sha256": "9edbccc42de49244d42a5e8fdc001828cf5a5512f1705419bcd96e23783c2998"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libpulse.so",
+          "destination": "jniLibs/arm64-v8a/libpulse.so",
+          "size": 293456,
+          "sha256": "3a97a458ffc70732d167855bc97c7dea39cb338bfa7d74d4c851ab27f2ec2d54"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libpulseaudio.so",
+          "destination": "jniLibs/arm64-v8a/libpulseaudio.so",
+          "size": 67416,
+          "sha256": "a9511cd0984a12f235752af98c11f8a31971b10c1d62da324996d8c8a7e1d0c1"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libpulsecommon-13.0.so",
+          "destination": "jniLibs/arm64-v8a/libpulsecommon-13.0.so",
+          "size": 415400,
+          "sha256": "c008c397967eb26fbc9bb1164998d8b62dc79179c8be27f299d5375f177981e1"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libpulsecore-13.0.so",
+          "destination": "jniLibs/arm64-v8a/libpulsecore-13.0.so",
+          "size": 547264,
+          "sha256": "06bc87b6f725ee2e405648bc375eb7c3c2569731eae8d37ad8ccd31e8fa7f865"
+        },
+        {
+          "archivePath": "assets/rootfs.tzst",
+          "destination": "buildInputs/rootfs.tzst",
+          "size": 65251198,
+          "sha256": "8b5110f248e84f2aee4df37dab8bac4c4bf2bdc7b400c0643a0778ca8e7e40c2"
+        }
+      ]
+    },
+    {
+      "id": "fluidsynth-v2.4.5-android24",
+      "url": "https://github.com/FluidSynth/fluidsynth/releases/download/v2.4.5/fluidsynth-2.4.5-android24.zip",
+      "size": 39634172,
+      "sha256": "9b4863c690817eef3442afce25605494c8cd9a925ea5328cf2f87b39ac82fed2",
+      "license": "LGPL-2.1-or-later AND third-party dependency licenses",
+      "source": {
+        "repository": "https://github.com/FluidSynth/fluidsynth",
+        "revision": "v2.4.5"
+      },
+      "entries": [
+        {
+          "archivePath": "lib/arm64-v8a/libFLAC.so",
+          "destination": "jniLibs/arm64-v8a/libFLAC.so",
+          "size": 995672,
+          "sha256": "af9900f23bffb0bc15b9a32bcb8bc9684733507ff3443952ad70c6ab497684c7"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libfluidsynth-assetloader.so",
+          "destination": "jniLibs/arm64-v8a/libfluidsynth-assetloader.so",
+          "size": 30000,
+          "sha256": "164c76748d595e06134adad1c7ca6e155db3c2155c233ee71c8bb5ac31e30386"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libfluidsynth.so",
+          "destination": "jniLibs/arm64-v8a/libfluidsynth.so",
+          "size": 2329992,
+          "sha256": "3f075df99b0fb71fe3c961436ed291dcde0f32e5614414cf0fd570f3ef3bee31"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libgio-2.0.so",
+          "destination": "jniLibs/arm64-v8a/libgio-2.0.so",
+          "size": 7420848,
+          "sha256": "9d71942b2cad1e495ca1d71e4615891f1435a231f4eac8f86f2b681a1ba22f94"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libglib-2.0.so",
+          "destination": "jniLibs/arm64-v8a/libglib-2.0.so",
+          "size": 4798832,
+          "sha256": "684e4f13202584a4e88fbd8e8af1769ab89498f74de895e51875b14e675e0b79"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libgmodule-2.0.so",
+          "destination": "jniLibs/arm64-v8a/libgmodule-2.0.so",
+          "size": 37968,
+          "sha256": "bd5649c276319b3b88bb99124d2a4147adb964254959b1b5d6c30e432b54025d"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libgobject-2.0.so",
+          "destination": "jniLibs/arm64-v8a/libgobject-2.0.so",
+          "size": 1224600,
+          "sha256": "179a21543bc26bb46c72f3946d57687e6226c01bf0dbac45c5c1a767242618d6"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libgthread-2.0.so",
+          "destination": "jniLibs/arm64-v8a/libgthread-2.0.so",
+          "size": 7648,
+          "sha256": "12f082715ef004d7cf2e597c0cc9cba323b453c68b29e0b276b7cd89d641080e"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libinstpatch-1.0.so",
+          "destination": "jniLibs/arm64-v8a/libinstpatch-1.0.so",
+          "size": 3574656,
+          "sha256": "536e9c5cbeded32d1ca045712a174bb5f68b452a9e29b919d31e52c36ca96355"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/liboboe.so",
+          "destination": "jniLibs/arm64-v8a/liboboe.so",
+          "size": 2970112,
+          "sha256": "cd8328313ed1241c9806ae5ad4ca06aef6768625f974081c3f9815522b821d87"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libogg.so",
+          "destination": "jniLibs/arm64-v8a/libogg.so",
+          "size": 84792,
+          "sha256": "8409892ff0efd4e25b9304527093b008a2e844a9b5ed14b21e4e448bf6250ff3"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libopus.so",
+          "destination": "jniLibs/arm64-v8a/libopus.so",
+          "size": 1766024,
+          "sha256": "198d90828b62bf51e6062ee8f4903a80c76903e3b10b43945ff4203aebac4611"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libpcre.so",
+          "destination": "jniLibs/arm64-v8a/libpcre.so",
+          "size": 638704,
+          "sha256": "86232515145e69c3c157e5eea0072008a19066d51b45768b6c4645a0d1b60682"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libpcreposix.so",
+          "destination": "jniLibs/arm64-v8a/libpcreposix.so",
+          "size": 19224,
+          "sha256": "0a330bf2953197e26a10e8b52dcad15c6b922fcafdc8d8400e80788411425448"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libsndfile.so",
+          "destination": "jniLibs/arm64-v8a/libsndfile.so",
+          "size": 2417288,
+          "sha256": "e6a398a2396df0d43ce8697fdab2ed9e60f4ff0e04d5f0e72884959447a509d6"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libvorbis.so",
+          "destination": "jniLibs/arm64-v8a/libvorbis.so",
+          "size": 578632,
+          "sha256": "b0f193a057bcdef345f6e954a772e191febd98273888b80de4006403957a0ae7"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libvorbisenc.so",
+          "destination": "jniLibs/arm64-v8a/libvorbisenc.so",
+          "size": 1015464,
+          "sha256": "14138bb9ce13e5aedc0fc0586caf275f1d8054e1f7bfe8eb28c2c0abbdacdbb6"
+        },
+        {
+          "archivePath": "lib/arm64-v8a/libvorbisfile.so",
+          "destination": "jniLibs/arm64-v8a/libvorbisfile.so",
+          "size": 116936,
+          "sha256": "ab1bd86de7979aaac0e786e17bfaef25c253a4bfe5f7faa4fb4cb371dad3eebf"
+        }
+      ]
+    },
+    {
+      "id": "timgm6mb-d6ad4ed7",
+      "format": "file",
+      "url": "https://raw.githubusercontent.com/arbruijn/TimGM6mb/d6ad4ed72dce1fd3d67f17b74e08cd7ae7941a96/TimGM6mb.sf2",
+      "size": 5969788,
+      "sha256": "c5378b62028c920cb11e4803327983fee2f2cdff5dc89c708e39da417e51c854",
+      "license": "GPL-2.0-only",
+      "source": {
+        "repository": "https://github.com/arbruijn/TimGM6mb",
+        "revision": "d6ad4ed72dce1fd3d67f17b74e08cd7ae7941a96"
+      },
+      "destination": "assets/soundfont/TimGM6mb.sf2"
+    },
+    {
+      "id": "ubuntu-liberation-fonts-2.1.5-3",
+      "format": "deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/f/fonts-liberation/fonts-liberation_2.1.5-3_all.deb",
+      "size": 1603290,
+      "sha256": "065c2ab1abc9108b17d401016dc594b79750904390f095845c93bb06e1153acc",
+      "license": "OFL-1.1",
+      "source": {
+        "repository": "https://github.com/liberationfonts/liberation-fonts",
+        "version": "2.1.5"
+      },
+      "entries": [
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf",
+          "destination": "assets/fonts/LiberationMono-Bold.ttf",
+          "size": 308068,
+          "sha256": "626655e94dd82f3f42549daf995c921b0915fa8ab1f4b839559e8892ea41d240"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf",
+          "destination": "assets/fonts/LiberationMono-BoldItalic.ttf",
+          "size": 284184,
+          "sha256": "15eb161953e3ecc7fc05a3fec8a59e0f4e0a54a4e375736adf8e98d65981f813"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf",
+          "destination": "assets/fonts/LiberationMono-Italic.ttf",
+          "size": 281608,
+          "sha256": "a71b2c25c89da05cf0e7c4dbba8d473fdead0b181ae56165217747d2c1f39215"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf",
+          "destination": "assets/fonts/LiberationMono-Regular.ttf",
+          "size": 319624,
+          "sha256": "395fa5ab8d40c8eba390ced528744ea75a7f69aabf3e68b6f925ca0e39a27370"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+          "destination": "assets/fonts/LiberationSans-Bold.ttf",
+          "size": 414568,
+          "sha256": "3973aa5054fb467dd5627245d3dc82e37bf16fe075756156a570455871351582"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf",
+          "destination": "assets/fonts/LiberationSans-BoldItalic.ttf",
+          "size": 409108,
+          "sha256": "c80fa7f2ffa0e01d4d8dcd6a6d1e43eda665222d1b4db597dde1174c456006cf"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf",
+          "destination": "assets/fonts/LiberationSans-Italic.ttf",
+          "size": 415920,
+          "sha256": "830c5fa600505fb4c1a271b4271c53c44bae43f492b2a240d0e98a3a7a380121"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+          "destination": "assets/fonts/LiberationSans-Regular.ttf",
+          "size": 410820,
+          "sha256": "4659bc0c58c5028dd488ec928d41d9265db43d9b669fc14ca8b0832daca7b144"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf",
+          "destination": "assets/fonts/LiberationSerif-Bold.ttf",
+          "size": 370196,
+          "sha256": "9e66c25e20868756bf12eb24a520a4552727c9cd108f577f7ae33e3c0110e39c"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf",
+          "destination": "assets/fonts/LiberationSerif-BoldItalic.ttf",
+          "size": 376892,
+          "sha256": "379010e87421a883f7bbfa7936d23dfe0257a54ce850819b74556e9f2c615a8a"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf",
+          "destination": "assets/fonts/LiberationSerif-Italic.ttf",
+          "size": 375760,
+          "sha256": "eaeaf7f2b12544ecde64290c1fa7ec403ff70fd58b313637b265400b20249242"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf",
+          "destination": "assets/fonts/LiberationSerif-Regular.ttf",
+          "size": 393692,
+          "sha256": "705903ae1382f0150f115d6f10a30f5b2f3d6ade649c474afe6366c39174fb65"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-vlgothic-20220612-1ubuntu1",
+      "format": "deb",
+      "url": "https://old-releases.ubuntu.com/ubuntu/pool/universe/f/fonts-vlgothic/fonts-vlgothic_20220612-1ubuntu1_all.deb",
+      "size": 2362816,
+      "sha256": "25c1429bc7db5acc2ef03e47c2ef239ae7be76273b26a023e7c1c3e7efe8aae7",
+      "license": "VLGothic composite license",
+      "source": {
+        "repository": "https://launchpad.net/ubuntu/+source/fonts-vlgothic",
+        "version": "20220612-1ubuntu1"
+      },
+      "entries": [
+        {
+          "archivePath": "./usr/share/fonts/truetype/vlgothic/VL-Gothic-Regular.ttf",
+          "destination": "assets/fonts/VL-Gothic-Regular.ttf",
+          "size": 4088728,
+          "sha256": "cccbbd1a228566007b2e1771bb7ebeda829cc106d4327a924b1c50a47245ea33"
+        },
+        {
+          "archivePath": "./usr/share/fonts/truetype/vlgothic/VL-PGothic-Regular.ttf",
+          "destination": "assets/fonts/VL-PGothic-Regular.ttf",
+          "size": 4149288,
+          "sha256": "9c32cc9cff2d04ac95b0e8fce51ba439083e473581b71cae69aeaa8729e881b3"
+        }
+      ]
+    },
+    {
+      "id": "noto-sans-cjk-jp-2.004",
+      "format": "file",
+      "url": "https://raw.githubusercontent.com/notofonts/noto-cjk/Sans2.004/Sans/OTF/Japanese/NotoSansCJKjp-Regular.otf",
+      "size": 16467736,
+      "sha256": "68a3fc98800b2a27b371f2fb79991daf3633bd89309d4ffaa6946fd587f375b5",
+      "license": "OFL-1.1",
+      "source": {
+        "repository": "https://github.com/notofonts/noto-cjk",
+        "revision": "Sans2.004"
+      },
+      "destination": "assets/fonts/NotoSansCJKjp-Regular.otf"
+    },
+    {
+      "id": "box64-source-e2345d73",
+      "url": "https://codeload.github.com/ptitSeb/box64/zip/e2345d735af36f7915ab861a55b489d69f2350c7",
+      "size": 20706945,
+      "sha256": "306f9e75ccd3f0601248390f137a895d2c79675bee779635e672a778ce4fe8c2",
+      "license": "MIT",
+      "source": {
+        "repository": "https://github.com/ptitSeb/box64",
+        "revision": "e2345d735af36f7915ab861a55b489d69f2350c7"
+      },
+      "format": "file",
+      "destination": "buildInputs/box64-e2345d73.zip"
+    },
+    {
+      "id": "arm-gnu-toolchain-14.2.rel1",
+      "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/14.2.rel1/binrel/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-aarch64-none-linux-gnu.zip",
+      "size": 331491225,
+      "sha256": "bd5f4808995af2ec647bd0fe8f62815e2c65abcf0558f38f183188d05328d0a0",
+      "license": "GPL-3.0-or-later WITH GCC-exception-3.1 AND third-party dependency licenses",
+      "format": "file",
+      "destination": "buildInputs/arm-gnu-toolchain.zip"
+    }
+  ]
+}

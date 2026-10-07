@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "component": "cnc-ddraw",
+  "version": "6.6.0.0",
+  "upstream": {
+    "repository": "https://github.com/FunkyFr3sh/cnc-ddraw",
+    "tag": "v6.6.0.0",
+    "commit": "4df9dfc654b44a39aea67fcefa0b222aaf3cafd1",
+    "release": "https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v6.6.0.0",
+    "asset": {
+      "url": "https://github.com/FunkyFr3sh/cnc-ddraw/releases/download/v6.6.0.0/cnc-ddraw.zip",
+      "sha256": "9a0ec05d5cb648496f6603faa31abc47ee2e0fc901d1932a581daf5add6420e8"
+    }
+  },
+  "packagedBinary": {
+    "releaseAssetMember": "ddraw.dll",
+    "releaseAssetMemberSha256": "8dd2b898605307060f03819d111a7b43c0b1154e2f079bc07e8ab60e8d0947ef",
+    "archivePath": "ddraw.tzst",
+    "archiveMember": "syswow64/ddraw.dll",
+    "archiveSha256": "eabb2d59ce7060767996d0c9597ee8772059126a3af01698e59a5e7905e49867",
+    "verifiedExactMatch": true
+  },
+  "shaders": [
+    {
+      "path": "Shaders/nearest-neighbor.glsl",
+      "releaseAssetMember": "Shaders/nearest-neighbor.glsl",
+      "sha256": "320f2afeec28e831220be2364d0e076620c9bb40d41560286b5cb81b619a32a9",
+      "upstreamSha256": "e741a3f07096c891bf3edfc89c82e0388acf35cbd832fed42edd5c9c3bc85e79",
+      "transformation": "LF line endings converted to CRLF",
+      "normalizedLfSha256": "e741a3f07096c891bf3edfc89c82e0388acf35cbd832fed42edd5c9c3bc85e79",
+      "verifiedTextMatch": true
+    },
+    {
+      "path": "Shaders/interpolation/bilinear.glsl",
+      "releaseAssetMember": "Shaders/interpolation/bilinear.glsl",
+      "sha256": "320f2afeec28e831220be2364d0e076620c9bb40d41560286b5cb81b619a32a9",
+      "upstreamSha256": "e741a3f07096c891bf3edfc89c82e0388acf35cbd832fed42edd5c9c3bc85e79",
+      "transformation": "LF line endings converted to CRLF",
+      "normalizedLfSha256": "e741a3f07096c891bf3edfc89c82e0388acf35cbd832fed42edd5c9c3bc85e79",
+      "verifiedTextMatch": true
+    }
+  ],
+  "license": {
+    "spdx": "MIT",
+    "noticePath": "LICENSE",
+    "noticeSha256": "272c40d772d26f698d1399575f822c483d19f74b5d350d820d83a642b6e988eb",
+    "upstreamUrl": "https://raw.githubusercontent.com/FunkyFr3sh/cnc-ddraw/v6.6.0.0/LICENSE"
+  }
+}

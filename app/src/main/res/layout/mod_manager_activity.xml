@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mod_manager_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        style="@style/Toolbar" />
+
+    <TextView
+        android:id="@+id/mod_manager_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="?attr/colorSecondaryText"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/mod_manager_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="?attr/colorSecondaryVariant"
+        android:dividerHeight="1dp" />
+</LinearLayout>
