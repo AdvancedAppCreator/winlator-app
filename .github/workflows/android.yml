@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     timeout-minutes: 90
 
     steps:
@@ -40,15 +40,13 @@ jobs:
             cmake;3.22.1
 
       - name: Install native build tools
-        run: sudo apt-get update && sudo apt-get install --yes ninja-build zstd
+        run: choco install ninja zstandard --yes --no-progress
 
       - name: Install pinned Python build dependency
         run: python -m pip install --require-hashes -r requirements-build.txt
 
       - name: Build and test unsigned release
-        run: |
-          chmod +x ./gradlew
-          ./gradlew --no-daemon --console=plain testDebugUnitTest assembleRelease
+        run: .\gradlew.bat --no-daemon --console=plain testDebugUnitTest assembleRelease
 
       - name: Upload unsigned APK
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
