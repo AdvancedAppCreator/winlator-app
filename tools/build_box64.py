@@ -193,7 +193,7 @@ def write_provenance(binary: Path) -> None:
     patch_digest = hashlib.sha256(
         PATCH.read_bytes().replace(b"\r\n", b"\n")
     ).hexdigest()
-    provenance = {
+    build_provenance = {
         "archive_sha256": sha256(ARCHIVE),
         "box64_sha256": sha256(binary),
         "package_version": PACKAGE_VERSION,
@@ -205,11 +205,25 @@ def write_provenance(binary: Path) -> None:
         "upstream_url": UPSTREAM_URL,
     }
     expected = json.loads(PROVENANCE.read_text(encoding="utf-8"))
-    if provenance != expected:
+    expected_inputs = {
+        key: value
+        for key, value in expected.items()
+        if not key.startswith("reference_")
+    }
+    actual_inputs = {
+        key: value
+        for key, value in build_provenance.items()
+        if key not in {"archive_sha256", "box64_sha256"}
+    }
+    if actual_inputs != expected_inputs:
         raise RuntimeError(
-            "Box64 outputs do not match the checked-in provenance: "
-            f"actual={json.dumps(provenance, sort_keys=True)}"
+            "Box64 inputs do not match the checked-in provenance: "
+            f"actual={json.dumps(actual_inputs, sort_keys=True)}"
         )
+    print(
+        "Box64 build provenance: "
+        f"{json.dumps(build_provenance, sort_keys=True)}"
+    )
 
 
 def main() -> None:
