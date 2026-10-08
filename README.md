@@ -13,6 +13,20 @@ Winlator project or its maintainers. Do not request support for this fork from
 the upstream maintainers. The Android package name is `com.winlator.secure`, so
 it can be installed separately from the official application.
 
+## Adult Game Manager integration
+
+[Adult Game Manager](https://github.com/AdvancedAppCreator/adult-game-manager)
+can keep supported Windows games in the same local library as installed Android
+and extracted games, create/register compatible Winlator entries, and launch
+them through Winlator Secure.
+
+- [Unified launcher setup](https://advancedappcreator.github.io/adult-game-manager-releases/launcher-setup/)
+- [Windows games with Winlator guide](https://advancedappcreator.github.io/adult-game-manager-releases/guides/winlator-android/)
+- [Latest AGM release](https://github.com/AdvancedAppCreator/adult-game-manager/releases/latest)
+
+AGM and Winlator Secure are separate applications with separate releases,
+licenses, privacy disclosures, and support boundaries.
+
 ## Distribution status
 
 The repository-level terms in [LICENSE](LICENSE) do not override the licenses
